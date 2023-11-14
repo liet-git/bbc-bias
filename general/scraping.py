@@ -7,8 +7,7 @@ from selenium.webdriver.chrome.service import Service
 from general.general import load_json, save_json, generate_summary_csv, get_article_info
 
 
-def scrape_topics(all_topics:json, base_url: str):
-
+def scrape_topics(all_topics: json, base_url: str):
     chrome = Service("/home/jan/.wdm/drivers/chromedriver/linux64/118.0.5993.70/chromedriver-linux64/chromedriver")
     scraper = BBCScraper(service=chrome)
     scraper.initialise_browser()
@@ -43,7 +42,6 @@ def load_full_article_data(directory: str):
 
 
 if __name__ == '__main__':
-
     all_topics_json = load_json('./data/topics.json')
     base_url_topic = 'https://www.bbc.co.uk/news/topics'
 
