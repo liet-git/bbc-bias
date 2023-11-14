@@ -5,6 +5,14 @@ The following code can be used to gather information from BBC articles regarding
 Simply clone the repoistory and run:
 ```pip3 install -r requirements.txt```
 
+## Limitations
+
+* Currently, only articles are supported (not 'live' articles, which are quite large, and often feature more continuous live news)
+* The topics selected potentially do not cover all articles related to Palestine in the current period (i.e. there may be some published which are not tagged with a certain topic, though coverage seems quite good)
+
+To do:
+* add scraping for the 'search' function of BBC (would be relatively straightforward, but there is a 30 page limit, so would potentially have to include some more complex word partnering to get limited results and repeat).
+
 ### Usage
 
 To simply collect all articles, from all topics defined in the above json, run  ```./general/scraping.py```. It is also possible to scrape individual articles/topics using the ```BBCArticle``` and ```BBCScraper``` class respectively.
