@@ -4,7 +4,7 @@ import json
 
 from scraper.bbc_scraper import BBCScraper
 from selenium.webdriver.chrome.service import Service
-from general.general import load_json, save_json, generate_summary_csv, get_article_info
+from general import load_json, save_json, generate_summary_csv, get_article_info
 
 
 def scrape_topics(all_topics: json, base_url: str):
@@ -17,7 +17,7 @@ def scrape_topics(all_topics: json, base_url: str):
         topic_data = scraper.return_entities_from_topic(
             base_url=base_url, topic=topic_url)
         topic_name = topic.lower().replace(" ", "_")
-        save_json('./data/metadata/' + topic_name + ".json", topic_data)
+        save_json('../data/metadata/' + topic_name + ".json", topic_data)
 
 
 def load_full_article_data(directory: str):
@@ -42,11 +42,11 @@ def load_full_article_data(directory: str):
 
 
 if __name__ == '__main__':
-    all_topics_json = load_json('./data/topics.json')
+    all_topics_json = load_json('../data/topics.json')
     base_url_topic = 'https://www.bbc.co.uk/news/topics'
 
     scrape_topics(all_topics_json, base_url_topic)
 
-    summary_df = load_full_article_data('./data/metadata/')
+    #summary_df = load_full_article_data('./data/metadata/')
 
-    summary_df.to_csv('./data/summary.csv')
+    #summary_df.to_csv('./data/summary.csv')
