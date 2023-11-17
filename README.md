@@ -30,4 +30,4 @@ In ```./data/metadata/summary.csv``` we have all the articles collected from the
 
 The ```./general/base_analysis.py``` contains a simple analysis looking at word count frequencies in the article titles, as well as plotting the mentions of Palestine/Israel/Gaza/Hamas with the following output (the following plot shows counts with articles containing mention of the 'pro-' string removed):
 
-![alt text](./outputs/word_bank_mentions.png "Title")
+![alt text](./outputs/word_bank_mentions_20231007_to_20231113.png)
