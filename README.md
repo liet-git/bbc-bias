@@ -24,7 +24,7 @@ Simply clone the repoistory and run:
 To do:
 * add scraping for the 'search' function of BBC (would be relatively straightforward, but there is a 30 page limit, so would potentially have to include some more complex word partnering to get limited results and repeat).
 
-### Usage
+## Usage
 
 To simply collect all articles, from all topics defined in the above json, run  ```./general/scraping.py```. It is also possible to scrape individual articles/topics using the ```BBCArticle``` and ```BBCScraper``` class respectively.
 
