@@ -2,7 +2,6 @@
 The following code can be used to gather information from BBC articles regarding several topics (a form of grouping on the BBC website). These topics can be found in ```./data/topics.json```. 
 
 Currently included topics:
-The following topics are included:
 * [Gaza](https://www.bbc.com/news/topics/cgv64vq5z82t)
 * [Israel](https://www.bbc.com/news/topics/c302m85q5ljt)
 * [Israel and the Palestinians](https://www.bbc.com/news/topics/c207p54m4rqt)
