@@ -11,6 +11,7 @@ The following topics are included:
 * [Palestinian Territories](https://www.bbc.com/news/topics/cdl8n2eder8t)
 
 Latest update date: *2023-11-13*
+Latest dataset: ```./data/summary_20231007_to_20231113.csv``` or ```./outputs/articles_word_bank_full_20231007-20231113.csv``` which contains processed articles data including word bank mentions (see below for more detail).
 
 ## Set up and requirements
 Simply clone the repoistory and run:
