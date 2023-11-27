@@ -2,20 +2,31 @@ import json
 from glob import glob
 import time
 import random
+import os
 
 from entities.bbc_article import BBCArticle
 
 
-def save_json(file: str, data: json):
+def save_json(file: str, data: json, append: bool = False):
     """
     Save json file
 
+    :param append:
     :param file:
     :param data:
     :return:
     """
-    with open(file, 'w', encoding='utf8') as json_file:
-        json.dump(data, json_file, ensure_ascii=False)
+    if not os.path.isfile(file) or not append:
+        with open(file, 'w', encoding='utf8') as json_file:
+            json.dump(data, json_file, ensure_ascii=False)
+    else:
+        with open(file, encoding='utf8') as json_file:
+            existing_data = json.load(json_file)
+
+        existing_data = {**existing_data, **data}
+
+        with open(file, 'w', encoding='utf8') as json_file:
+            json.dump(existing_data, json_file, ensure_ascii=False)
 
 
 def load_json(file: str):
@@ -24,14 +35,16 @@ def load_json(file: str):
     :param file:
     :return:
     """
+    assert os.path.isfile(file), "File {} doesn't exist".format(file)
+
     with open(file) as f:
         json_file = json.load(f)
     return json_file
 
 
-def generate_summary_csv(directory: str):
+def return_article_dataset(directory: str):
     """
-    Read directory of scraped json files and create csv summary
+    Read directory of scraped json files and return all data
     :param directory:
     :return:
     """
@@ -51,15 +64,14 @@ def generate_summary_csv(directory: str):
 
 
 def get_article_info(row):
-    href = row['url']
-    href = "http://bbc.co.uk" + href
+    url = row['url']
 
     try:
-        article = BBCArticle(href)
+        article = BBCArticle(url)
     except AttributeError:
-        print("Failed to process article {}.".format(href))
+        print("Failed to process article {}.".format(url))
         row['date'] = ''
-        row['title'] = ''
+        row['title_from_page'] = ''
         row['text'] = ''
         return row
 
@@ -67,7 +79,6 @@ def get_article_info(row):
     row['title_from_page'] = article.title
     row['text'] = article.body
 
-    time.sleep(random.randint(800.0, 1400.0) / 1000.0)
+    time.sleep(random.randint(400.0, 500.0) / 1000.0)
 
     return row
-
