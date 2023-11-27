@@ -46,9 +46,14 @@ class BBCScraper(Scraper):
         for article in articles:
             try:
                 title, link = article.find('span').text, article.find('a', {"href": True})['href']
+                if re.match('^[0-9]{2}\:[0-9]{2}.*',title):
+                    regex = re.compile('.*Headline*')
+                    title, link = article.find('span', {"class":regex}).text, article.find('a', {"href": True})['href']
                 results[title] = link
             except IndexError:
                 print("Failed to find title or link.")
+            except AttributeError:
+                print("Failed to find title.")
 
         return results
 
