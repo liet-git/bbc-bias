@@ -9,9 +9,9 @@ Currently included topics:
 * [Hamas](https://www.bbc.com/news/topics/cnx753jen5zt)
 * [Palestinian Territories](https://www.bbc.com/news/topics/cdl8n2eder8t)
 
-Latest update date: *2023-11-13*
+Latest update date: *2023-11-27*
 
-Latest dataset: ```./data/summary_20231007_to_20231113.csv``` or ```./outputs/articles_word_bank_full_20231007-20231113.csv``` which contains processed articles data including word bank mentions (see below for more detail).
+Latest dataset: ```./data/summary_20231127.csv``` or ```./outputs/articles_word_bank_full_20231007-20231113.csv``` which contains processed articles data including word bank mentions (see below for more detail).
 
 ## Set up and requirements
 Simply clone the repoistory and run:
@@ -29,6 +29,24 @@ To do:
 
 To simply collect all articles, from all topics defined in the above json, run  ```./general/scraping.py```. It is also possible to scrape individual articles/topics using the ```BBCArticle``` and ```BBCScraper``` class respectively.
 
+### NLP/casualty analysis
+
+Using the scraped data, we can follow the procedure from https://github.com/hollyjackson/casualty_mentions_nyt/tree/main to annotate casualty mentions in all articles using Stanford NLP.
+
+To do this:
+
+1. Set up stanford nlp: https://stanfordnlp.github.io/CoreNLP/download.html
+2. Navigate to the nlp directory
+3. Run `./nlp/preprocessing.ipynb` to prepare the dataframe and format of the article files as required
+4. Run which will generate the results files in json format
+```
+    export CLASSPATH=$CLASSPATH:/path/to/stanford-corenlp-4.5.5/*:
+
+    java edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,ner,depparse -filelist all-files.txt -outputFormat json -outputDirectory ./results
+   ```
+5. Run `./nlp/postprocessing.ipynb` to manually start annotating the article files.
+6. Run `./nlp/plot_mentions.ipynb` if desired to plot the results. 
+
 ## Analysis 
 
 ### Overview of dataset
@@ -41,6 +59,10 @@ In ```./data/summary_20231113.csv``` we have all the articles collected from the
 * title_from_page: the title of the article as shown when loaded (can differ to above, often longer)
 * topic: the topic this article was found in (can be multiple)
 * url: full url to the article
+
+#### Casualties analysis
+
+#### Simple mention analysis
 
 The ```./general/base_analysis.py``` contains a simple analysis looking at word count frequencies in the article titles, as well as plotting the mentions of Palestine/Israel/Gaza/Hamas with the following output:
 
