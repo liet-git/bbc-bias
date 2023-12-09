@@ -46,9 +46,9 @@ class BBCScraper(Scraper):
         for article in articles:
             try:
                 title, link = article.find('span').text, article.find('a', {"href": True})['href']
-                if re.match('^[0-9]{2}\:[0-9]{2}.*',title):
+                if re.match('^[0-9]{2}\:[0-9]{2}.*', title):
                     regex = re.compile('.*Headline*')
-                    title, link = article.find('span', {"class":regex}).text, article.find('a', {"href": True})['href']
+                    title, link = article.find('span', {"class": regex}).text, article.find('a', {"href": True})['href']
                 results[title] = link
             except IndexError:
                 print("Failed to find title or link.")
@@ -57,7 +57,7 @@ class BBCScraper(Scraper):
 
         return results
 
-    def _return_page_count(self, url, browser):
+    def _return_page_count(self, url, browser=None, element="li", class_type='.*PageButtonListItem.*'):
         if not browser:
             browser = self.browser
 
@@ -65,13 +65,13 @@ class BBCScraper(Scraper):
 
         base_bs = bs(browser.page_source, "lxml")
 
-        regex = re.compile('.*PageButtonListItem.*')
-        list_pages = base_bs.find_all("li", {"class": regex})
+        regex = re.compile(class_type)
+        list_pages = base_bs.find_all(element, {"class": regex})
 
         if not list_pages:
             return None
 
-        return list_pages[-1].text
+        return list_pages[-1].text.strip()
 
     def return_entities_from_topic(self, base_url, topic, browser=None, sleep=random.randint(1800.0, 2400.0) / 1000.0):
 
@@ -83,8 +83,6 @@ class BBCScraper(Scraper):
         topic_url = base_url + "/" + topic
 
         n_pages = self._return_page_count(topic_url, browser)
-
-        print(n_pages)
 
         for _p in tqdm(range(1, int(n_pages) + 1)):
             page_results = self.return_entities(topic_url, params={"page": _p})
