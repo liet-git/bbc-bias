@@ -18,7 +18,7 @@ def scrape_topics(all_topics: json, base_url: str, ignore: bool = True):
     :param ignore: a dataframe of existing articles to not rescrape
     :return:
     """
-    chrome = Service("/home/jan/.wdm/drivers/chromedriver/linux64/118.0.5993.70/chromedriver-linux64/chromedriver")
+    chrome = Service()
     scraper = BBCScraper(service=chrome)
     scraper.initialise_browser()
 
