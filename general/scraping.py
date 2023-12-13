@@ -9,6 +9,26 @@ from selenium.webdriver.chrome.service import Service
 from general import load_json, save_json, return_article_dataset, get_article_info
 
 
+def scrape_livefeed(live_feeds: json, base_url: str):
+    """
+
+    :param live_feeds:
+    :param base_url:
+    :return:
+    """
+    chrome = Service()
+    scraper = BBCScraper(service=chrome)
+    scraper.initialise_browser()
+
+    for livefeed, livefeed_url in live_feeds.items():
+        livefeed_data = scraper.return_entities_from_livefeed(
+            base_url=base_url, feed=livefeed_url)
+
+        livefeed_name = livefeed.lower().replace(" ", "_")
+
+        save_json('../data/metadata/livefeeds/' + livefeed_name + ".json", livefeed_data, append=False)
+
+
 def scrape_topics(all_topics: json, base_url: str, ignore: bool = True):
     """
     Scrape topics based on json file
@@ -37,7 +57,7 @@ def scrape_topics(all_topics: json, base_url: str, ignore: bool = True):
             if article not in existing_topic_data:
                 existing_topic_data[article] = href
 
-        save_json('../data/metadata/' + topic_name + ".json", existing_topic_data, append=False)
+        save_json('../data/metadata/topics/' + topic_name + ".json", existing_topic_data, append=False)
 
 
 def load_full_article_data(directory: str, existing_summary: pd.DataFrame = None):
@@ -68,7 +88,7 @@ def load_full_article_data(directory: str, existing_summary: pd.DataFrame = None
 
     # collect full article info
     tqdm.pandas()
-    df['url'] = 'http://bbc.co.uk'+df['href']
+    df['url'] = 'http://bbc.co.uk' + df['href']
     df = df.progress_apply(get_article_info, axis=1)
 
     return df
@@ -86,7 +106,12 @@ if __name__ == '__main__':
     all_topics_json = load_json('../data/topics.json')
     base_url_topic = 'https://www.bbc.co.uk/news/topics'
 
+    # load live feed json
+    all_livefeed_json = load_json('../data/livefeeds.json')
+    base_url_livefeed = 'https://www.bbc.com/news/live/'
+
     # collect all base article data, ignoring existing scraped articles
+    scrape_livefeed(all_livefeed_json, base_url_livefeed)
     scrape_topics(all_topics_json, base_url_topic, ignore=False)
 
     # this can then be run to collect full info (i.e. date + full text + inner article title which can be different)
