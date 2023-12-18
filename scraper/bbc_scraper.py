@@ -1,3 +1,4 @@
+import json
 import random
 import urllib
 import re
@@ -16,6 +17,10 @@ class BBCScraper(Scraper):
 
     def _load_url(self, url, browser=None):
         """
+
+        :param url:
+        :param browser:
+        :return:
         """
 
         if not browser:
@@ -25,11 +30,14 @@ class BBCScraper(Scraper):
 
         wait = WebDriverWait(browser, 10)
 
-    def return_entities(self, base_url, article_handler, browser=None, name='div', find_params={"type": "article"}, params=None):
-        '''
-        '''
+    def _return_page_source(self, base_url, browser=None, params=None):
+        """
 
-        results = []
+        :param base_url:
+        :param browser:
+        :param params:
+        :return:
+        """
 
         if not browser:
             browser = self.browser
@@ -41,6 +49,24 @@ class BBCScraper(Scraper):
 
         data = browser.page_source
 
+        return data
+
+    def return_entities(self, base_url, article_handler, browser=None, name='div', find_params={"type": "article"}, params=None):
+        """
+
+        :param base_url:
+        :param article_handler:
+        :param browser:
+        :param name:
+        :param find_params:
+        :param params:
+        :return:
+        """
+
+        results = []
+
+        data = self._return_page_source(base_url, browser=browser, params=params)
+
         web_bs = bs(data, "lxml")
 
         articles = web_bs.find_all(name, find_params)
@@ -51,6 +77,14 @@ class BBCScraper(Scraper):
         return results
 
     def _return_page_count(self, url, browser=None, element="li", class_type='.*PageButtonListItem.*'):
+        """
+
+        :param url:
+        :param browser:
+        :param element:
+        :param class_type:
+        :return:
+        """
         if not browser:
             browser = self.browser
 
@@ -68,60 +102,101 @@ class BBCScraper(Scraper):
 
     def return_entities_from_livefeed(self, base_url, feed, browser=None,
                                       sleep=random.randint(1800.0, 2400.0) / 1000.0):
+        """
+
+        :param base_url:
+        :param feed:
+        :param browser:
+        :param sleep:
+        :return:
+        """
         results = []
 
-        def _return_article_info(article):
+        def _return_article_info(page_source, page):
+            web_bs = bs(page_source, "lxml")
+            script_source = [script for script in web_bs.find_all('script') if feed in script.text and 'lx-nitro/pageNumber/{}/'.format(page) in script.text]
 
-            def _return_text(element):
+            page_blogs = []
 
-                sentences = []
+            if not script_source:
+                return page_blogs
 
-                def _process_sentence(sentence):
-                    if sentence.isspace() or sentence == '\n' or sentence == '':
-                        return
-                    sentence = sentence.strip().replace('\n', '').replace('\\', '')
-                    if len(sentence) > 0:
-                        if sentence[-1] not in punctuation:
-                            sentence += '.'
-                    return sentence
+            if len(script_source) > 1:
+                print("ERROR: found more than one matching source.")
+                return page_blogs
 
-                for t in element.contents:
-                    # print(t.name, '\n')
-                    if t.name == "figure":
-                        for e in t:
-                            if e.name == 'figcaption':
-                                sentences.append(_process_sentence(e.get_text().strip()))
-                        continue
-                    if t.name == "blockquote":
-                        ps = t.find_all('p')
-                        for _p in ps:
-                            found_text = _p.get_text().split('\n')
-                            for sent in found_text:
-                                sentences.append(_process_sentence(sent))
-                    elif t.name in ['p', 'ul', 'li']:
-                        found_text = t.get_text().split('\n')
-                        for sent in found_text:
-                            _ps = _process_sentence(sent)
-                            if _ps is not None:
-                                sentences.append(_ps)
+            script_source = script_source[0].text
+
+            function_source = script_source[script_source.find('{') + 1:script_source.rfind('}')]
+            json_source = function_source[function_source.find('{'):function_source.rfind('}') + 1]
+            json_page = json.loads(json_source)
+
+            def recurse_children(d, child="children", sentences=None):
+                if sentences is None:
+                    sentences = []
+                if 'text' in d:
+                    sentences.append(d['text'])
+                if child in d:
+                    if not d[child]:
+                        return sentences
+                    else:
+                        for child in d[child]:
+                            if 'name' in child:
+                                if child['name'] == 'caption':
+                                    continue
+                            recurse_children(child, child="children", sentences=sentences)
+
                 return sentences
 
-            try:
-                date = article.find("span", {"class": "qa-post-auto-meta"}).text
-                date = dt.datetime.strptime(date, "%H:%M %d %b")
-                date = date.replace(year=2023)
-                date = date.strftime("%Y-%m-%d %H:%M")
-            except AttributeError:
-                date = ''
+            def check_sentence_punctuation(sentence: str):
+                sentence = sentence.strip()
+                if len(sentence) > 0:
+                    if sentence[-1] not in punctuation:
+                        sentence += '.'
+                    sentence.replace('\n','')
+                return sentence
 
-            title = article.find("header", {"class": re.compile("lx-stream-post__header*")}).text
-            text = _return_text(article.find("div", {"class": re.compile("lx-stream-post-body")}))
+            for entry in json_page['body']['results']:
 
-            return {
-                "date": date,
-                "title": title,
-                "text": text,
-            }
+                body = entry['body']
+                post_sentences, visual_captions, image_captions = [], [], []
+
+                title = ''
+                if 'title' in entry:
+                    title = check_sentence_punctuation(entry['title'])
+                date = entry['lastPublished'].split("T")[0]
+
+                for entity in body:
+                    if entity['name'] == 'image':
+                        if 'caption' in entity:
+                            image_captions.append(check_sentence_punctuation(entity['caption']))
+                    elif entity['name'] == 'video':
+                        try:
+                            visual_captions.append(check_sentence_punctuation(entity['synopses']['short']))
+                        except KeyError:
+                            continue
+                    elif entity['name'] == 'paragraph':
+                        post_sentences += [check_sentence_punctuation(' '.join([s.strip() for s in recurse_children(entity)]))]
+                    elif entity['name'] == 'list':
+                        for list_item in entity['children']:
+                            post_sentences += [
+                                check_sentence_punctuation(' '.join([s.strip() for s in recurse_children(list_item)]))]
+                    elif entity['name'] == 'quote':
+                        post_sentences += [check_sentence_punctuation(s) for s in recurse_children(entity)]
+                    else:
+                        print("Found element type which we don't support: {}.".format(entity['name']))
+
+                page_blogs.append(
+                    {
+                        "date": date,
+                        "title": title,
+                        "text": post_sentences,
+                        "image_captions": image_captions,
+                        "video_captions": visual_captions,
+                        "type": entity["name"],
+                    }
+                )
+            return page_blogs
 
         if not browser:
             browser = self.browser
@@ -132,7 +207,8 @@ class BBCScraper(Scraper):
 
         for _p in tqdm(range(1, int(n_pages) + 1)):
             _url = feed_url+"/page/"+str(_p)
-            page_results = self.return_entities(_url, article_handler=_return_article_info, name="li", find_params={"class": "lx-stream__post-container"})
+            page_source = self._return_page_source(_url)
+            page_results = _return_article_info(page_source, _p)
             time.sleep(sleep)
 
             results += [dict(r, **{'url':_url}) for r in page_results]
@@ -140,6 +216,14 @@ class BBCScraper(Scraper):
         return results
 
     def return_entities_from_topic(self, base_url, topic, browser=None, sleep=random.randint(1800.0, 2400.0) / 1000.0):
+        """
+
+        :param base_url:
+        :param topic:
+        :param browser:
+        :param sleep:
+        :return:
+        """
 
         results = []
 
