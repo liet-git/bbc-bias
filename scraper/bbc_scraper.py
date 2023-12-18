@@ -153,7 +153,7 @@ class BBCScraper(Scraper):
                 if len(sentence) > 0:
                     if sentence[-1] not in punctuation:
                         sentence += '.'
-                    sentence.replace('\n','')
+                    sentence.replace('\n',' ')
                 return sentence
 
             for entry in json_page['body']['results']:
@@ -190,9 +190,9 @@ class BBCScraper(Scraper):
                     {
                         "date": date,
                         "title": title,
-                        "text": post_sentences,
-                        "image_captions": image_captions,
-                        "video_captions": visual_captions,
+                        "text": [s.replace("\n", " ") for s in post_sentences],
+                        "image_captions": [s.replace("\n", " ") for s in image_captions],
+                        "video_captions": [s.replace("\n", " ") for s in visual_captions],
                         "type": entity["name"],
                     }
                 )
