@@ -193,7 +193,6 @@ class BBCScraper(Scraper):
                         "text": [s.replace("\n", " ") for s in post_sentences],
                         "image_captions": [s.replace("\n", " ") for s in image_captions],
                         "video_captions": [s.replace("\n", " ") for s in visual_captions],
-                        "type": entity["name"],
                     }
                 )
             return page_blogs
