@@ -51,11 +51,11 @@ def scrape_topics(all_topics: json, base_url: str, ignore: bool = True):
 
         existing_topic_data = {}
         if ignore:
-            existing_topic_data = load_json('../data/metadata/' + topic_name + ".json")
+            existing_topic_data = load_json('../data/metadata/topics/' + topic_name + ".json")
 
-        for article, href in topic_data.items():
-            if article not in existing_topic_data:
-                existing_topic_data[article] = href
+        for article in topic_data:
+            if article['title'] not in existing_topic_data.keys():
+                existing_topic_data[article['title']] = article['link']
 
         save_json('../data/metadata/topics/' + topic_name + ".json", existing_topic_data, append=False)
 
@@ -96,7 +96,7 @@ def load_full_article_data(directory: str, existing_summary: pd.DataFrame = None
 
 if __name__ == '__main__':
 
-    latest_summary_path = glob.glob("../data/summary*.csv")
+    latest_summary_path = glob.glob("../data/summary_*_articles.csv")
     latest_summary = None
 
     if latest_summary_path:
@@ -115,7 +115,7 @@ if __name__ == '__main__':
     scrape_topics(all_topics_json, base_url_topic, ignore=False)
 
     # this can then be run to collect full info (i.e. date + full text + inner article title which can be different)
-    summary_df = load_full_article_data('../data/metadata/', existing_summary=latest_summary)
+    summary_df = load_full_article_data('../data/metadata/topics/', existing_summary=latest_summary)
 
     if latest_summary is not None:
         summary_df = pd.concat([latest_summary, summary_df])
@@ -123,4 +123,4 @@ if __name__ == '__main__':
     today_date = datetime.today().strftime('%Y%m%d')
 
     # save scraped output to summary file
-    summary_df.to_csv('../data/summary_' + today_date + '.csv')
+    summary_df.to_csv('../data/summary_' + today_date + '_articles.csv', index=False)
