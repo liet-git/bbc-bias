@@ -3,6 +3,7 @@ import glob
 import json
 from datetime import datetime
 from tqdm import tqdm
+import argparse
 
 from scraper.bbc_scraper import BBCScraper
 from selenium.webdriver.chrome.service import Service
@@ -94,7 +95,14 @@ def load_full_article_data(directory: str, existing_summary: pd.DataFrame = None
     return df
 
 
-if __name__ == '__main__':
+def process_articles(directory: str = '../data/metadata/topics/'):
+    """
+    Function to take directory of scraped json file and output a csv with all the information
+    It can also take into account an existing usmmary file
+
+    :param directory:
+    :return:
+    """
 
     latest_summary_path = glob.glob("../data/summary_*_articles.csv")
     latest_summary = None
@@ -102,20 +110,8 @@ if __name__ == '__main__':
     if latest_summary_path:
         latest_summary = pd.read_csv(latest_summary_path[0])
 
-    # load all BBC topics we want to scrape from a json file
-    all_topics_json = load_json('../data/topics.json')
-    base_url_topic = 'https://www.bbc.co.uk/news/topics'
-
-    # load live feed json
-    all_livefeed_json = load_json('../data/livefeeds.json')
-    base_url_livefeed = 'https://www.bbc.com/news/live/'
-
-    # collect all base article data, ignoring existing scraped articles
-    scrape_livefeed(all_livefeed_json, base_url_livefeed)
-    scrape_topics(all_topics_json, base_url_topic, ignore=False)
-
     # this can then be run to collect full info (i.e. date + full text + inner article title which can be different)
-    summary_df = load_full_article_data('../data/metadata/topics/', existing_summary=latest_summary)
+    summary_df = load_full_article_data(directory, existing_summary=latest_summary)
 
     if latest_summary is not None:
         summary_df = pd.concat([latest_summary, summary_df])
@@ -124,3 +120,110 @@ if __name__ == '__main__':
 
     # save scraped output to summary file
     summary_df.to_csv('../data/summary_' + today_date + '_articles.csv', index=False)
+
+
+def process_livefeeds(directory: str = '../data/metadata/livefeeds/'):
+    """
+
+    :param directory:
+    :return:
+    """
+
+    titles, dates, links, texts, image_captions, video_captions = [], [], [], [], [], []
+
+    for f_name in glob.glob(directory + '*.json'):
+        with open(f_name, 'r') as j:
+
+            lf = json.loads(j.read())
+
+            import re
+
+            for art in lf:
+                titles.append(art['title'])
+                dates.append(art['date'])
+                links.append(art['url'])
+                texts.append([re.sub("\\\\", "", t) for t in art['text']])
+                image_captions.append(art['image_captions'])
+                video_captions.append(art['video_captions'])
+
+    df = pd.DataFrame(
+        {
+            "title": titles,
+            "url": links,
+            "date": dates,
+            "body_text": texts,
+            "image_captions": image_captions,
+            "video_captions": video_captions,
+        }
+    )
+
+    # combine all text sources into one field
+    df['text'] = df['body_text'] + df['image_captions'] + df['video_captions']
+
+    # get todays date
+    today_date = datetime.today().strftime('%Y%m%d')
+
+    # save scraped output to summary file
+    df.to_csv('../data/summary_' + today_date + '_livefeeds.csv', index=False)
+
+
+def scrape_articles(topic_json: str = '../data/topics.json', ignore=False):
+    """
+
+    :param topic_json:
+    :param ignore:
+    :return:
+    """
+    # load all BBC topics we want to scrape from a json file
+    all_topics_json = load_json(topic_json)
+    base_url_topic = 'https://www.bbc.co.uk/news/topics'
+
+    scrape_topics(all_topics_json, base_url_topic, ignore=ignore)
+
+
+def scrape_livefeeds(livefeed_json: str = '../data/livefeeds.json'):
+    """
+
+    :param livefeed_json:
+    :return:
+    """
+    # load live feed json
+    all_livefeed_json = load_json(livefeed_json)
+    base_url_livefeed = 'https://www.bbc.com/news/live/'
+
+    # collect all base article data, ignoring existing scraped articles
+    scrape_livefeed(all_livefeed_json, base_url_livefeed)
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Scrape and process BBC articles.')
+
+    parser.add_argument('-s', '--scrape', action='store_true', help='Scrape a topic or livefeed.')
+    parser.add_argument('-p', '--process', action='store_true', help='Process a list of scraped topics or livefeeds.')
+
+    parser.add_argument('--scrape-from', '--scrape-from', default='../data/', type=str, help='Location of json folder for topics or livefeed.')
+    parser.add_argument('--json-directory', '--jsondirectory', default='../data/metadata/', type=str, help='Location of json folder with scraped jsons.')
+
+    parser.add_argument('-article', action='store_true', help='Whether to scrape/process articles.')
+    parser.add_argument('-livefeed', action='store_true', help='Whether to scrape/process livefeeds.')
+
+    args = vars(parser.parse_args())
+
+    scrape_from = args['scrape_from']
+    scraped_jsons = args['json_directory']
+
+    handle_articles = args['article']
+    handle_livefeeds = args['livefeed']
+
+    if args['scrape']:
+        if handle_articles:
+            scrape_articles(scrape_from+'topics.json')
+        if handle_livefeeds:
+            scrape_livefeeds(scrape_from+'livefeeds,json')
+
+    if args['process']:
+        if handle_articles:
+            scrape_articles(scraped_jsons+'topics/')
+        if handle_livefeeds:
+            scrape_livefeeds(scraped_jsons+'livefeeds/')
+
