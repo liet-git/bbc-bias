@@ -1,6 +1,6 @@
 # Overview
 
-In the following repository, we aim to analyse the anti-Palestinian bias in the reporting of the BBC, through providing transparent and reproducible methods for both obtaining BBC posts (articles and livefeeds) as well as a process for analysising the casualty mentions within the text. We have applied this technique to data since October 7, 2023, to investigate and show the disparity in the Palestinian and Israeli mentions of death. 
+In the following repository, we aim to analyse the anti-Palestinian bias in the reporting of the BBC, through providing transparent and reproducible methods for both obtaining BBC posts (articles and livefeeds) as well as a process for analysising the casualty mentions within the text. We have applied this technique to data since October 7, 2023 (a combined total of more than 600 articles, and 4000 posts in livefeeds), to investigate and show the disparity in the Palestinian and Israeli mentions of death.
 
 This analysis has been produced by Dana Najjar and Jan Lietava, with the original application (and the NLP/annotation code, credited within) [by Holly Jackson on NYT data](https://github.com/hollyjackson/casualty_mentions_nyt).
 
@@ -8,6 +8,8 @@ The pipeline of the study is as follows:
 1. We obtain source articles and livefeed posts from the BBC website (selecting relevant topics and livefeeds). 
 2. We preprocess the article data to be in the correct format, and use a natural language processing pipeline ([Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/)) to parse the grammatical structure of the sentences.
 3. We use the results from the pre-processing step to identify sentences with mention of death, and **manually tag each one of them**, using the following categories: Palestinian, Israeli, none (neither) or both. Please note, none of the tagging is performed automatically.
+
+We also provide the raw, annotated sentences, which can be found in `./nlp/fatality_counts/summary/`.
 
 ## 1. Source data
 
