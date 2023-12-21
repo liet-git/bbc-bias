@@ -1,13 +1,13 @@
 # Overview
 
-In the following repository, we aim to analyse the anti-Palestinian reporting in the BBC, through providing transparent and reproducible methods for both obtaining BBC posts (articles and livefeeds) as well as a process for analysis the casualty mentions within the text. We have applied this technique to data since October 7, 2023, to investigate and show the disparity in the Palestinian and Israeli mentions of death. 
+In the following repository, we aim to analyse the anti-Palestinian bias in the reporting of the BBC, through providing transparent and reproducible methods for both obtaining BBC posts (articles and livefeeds) as well as a process for analysising the casualty mentions within the text. We have applied this technique to data since October 7, 2023, to investigate and show the disparity in the Palestinian and Israeli mentions of death. 
 
-This analysis has been produced by Dana Najjar and Jan Lietava, with the original application (and the NLP/annotation code, credited within) by [by Holly Jackson on NYT data](https://github.com/hollyjackson/casualty_mentions_nyt).
+This analysis has been produced by Dana Najjar and Jan Lietava, with the original application (and the NLP/annotation code, credited within) [by Holly Jackson on NYT data](https://github.com/hollyjackson/casualty_mentions_nyt).
 
 The pipeline of the study is as follows:
 1. We obtain source articles and livefeed posts from the BBC website (selecting relevant topics and livefeeds). 
 2. We preprocess the article data to be in the correct format, and use a natural language processing pipeline ([Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/)) to parse the grammatical structure of the sentences.
-3. We use the results from the pre-processing step to identify sentences with mention of death, and **manually tag each one of them**, using the following categories: Palestinian, Israeli, neither or both. Please note, none of the tagging is performed automatically.
+3. We use the results from the pre-processing step to identify sentences with mention of death, and **manually tag each one of them**, using the following categories: Palestinian, Israeli, none (neither) or both. Please note, none of the tagging is performed automatically.
 
 ## 1. Source data
 
@@ -18,7 +18,7 @@ Posts from the BBC were obtained from two main sources:
 Due to the terms of conditions, we do not include all the full, raw article data in the repository, but do provide the reference jsons for obtaining them directly.
 
 ### 1.1 Articles
-Due to the limitations of the BBC search (limited to only 30 results), we obtained articles through the use of topics. Topics are a BBC functionality that allows for articles to be posted related to 'themes' and have no time/number limit. We scraped data from the following 6 topics: 
+Due to the limitations of the BBC search (limited to only 30 page results), we obtained articles through the use of topics. Topics are a BBC functionality that allows for articles to be posted related to 'themes' and have no time/number limit. We scraped data from the following 6 topics: 
 * [Gaza](https://www.bbc.com/news/topics/cgv64vq5z82t)
 * [Israel](https://www.bbc.com/news/topics/c302m85q5ljt)
 * [Israel and the Palestinians](https://www.bbc.com/news/topics/c207p54m4rqt)
@@ -39,7 +39,7 @@ Between October 7, 2023 and December 2, 2023 we collected 4404 invididual posts 
 
 ## 2. Pre-processing
 
-The python notebook in ```./nlp/preprocessing.ipynb``` provides the scripts and code for preparing the raw, article data into a format that is processable by the StanfordNLP package. 
+The python notebook in ```./nlp/preprocessing.ipynb``` provides the scripts and code for preparing the raw, article data into a format that is processable by the Stanford CoreNLP package. 
 
 After pre-processing using the above, run the following:
 
@@ -54,7 +54,7 @@ This will generate results files in the ```./nlp/results/``` directory for each 
 
 We use the same process as seen [here](https://github.com/hollyjackson/casualty_mentions_nyt#3-automated-and-manual-tagging), with the following text copied directly, with small modifications where our method was different.
 
-We use linguistic annotations from the Stanford CoreNLP preprocessing and extract sentences which contain mentions of death using a pre-compiled word bank. However, we widen the "detection" by also including adjectives (rather than just verbs). The classification is identical, where eac sentence is tagged as either Palestinian, Israeli, both (if the sentence contains multiple victims), or none (if the sentence is unrelated to Palestine and Israel, or if it occurred before October 7, 2023). 
+We use linguistic annotations from the Stanford CoreNLP preprocessing and extract sentences which contain mentions of death using a pre-compiled word bank. However, we widen the "detection" by also including adjectives (rather than just verbs). The classification is identical, where each sentence is tagged as either Palestinian, Israeli, both (if the sentence contains multiple victims), or none (if the sentence is unrelated to Palestine and Israel, or if it occurred before October 7, 2023). 
 
 The data is manually tagged according to the following general rules:
 
@@ -75,9 +75,9 @@ There is also an option for 'Next', if the sentence contains insufficient detail
 
 ## Bias in machine learning methods
 
-There are many studies highlighting the inherent bias (racist, Islamophobic, sexist, amongst others) present in machine learning models, and specifially natural language processing, which will also be present in the Stanford CoreNLP linguistic pipeline ([Jacskon, 2023](https://github.com/hollyjackson/casualty_mentions_nyt); Abid et al., 2021; Bolukbasi et al., 2016; Bordia and Bowman, 2019; Lu et al., 2020; Nadeem et al., 2020; Shearer et al., 2019; Sheng et al., 2019; Garimella et al., 2019). Hence, considering this structural, and inherent, anti-Palestinian bias in machine learning techniques, there may be further and deeper bias which we are not capturing. Furthermore, these biases are also present in the manual processes of annotation, which does also affect the resulting data (Lee, N.T., 2018).
+There are many studies highlighting the inherent bias (racist, Islamophobic, sexist, and other forms) present in machine learning models, and specifially natural language processing, which will also be present in the Stanford CoreNLP linguistic pipeline ([Jacskon, 2023](https://github.com/hollyjackson/casualty_mentions_nyt); Abid et al., 2021; Bolukbasi et al., 2016; Bordia and Bowman, 2019; Lu et al., 2020; Nadeem et al., 2020; Shearer et al., 2019; Sheng et al., 2019; Garimella et al., 2019). Hence, considering this structural, and inherent, anti-Palestinian bias in machine learning techniques, there may be further and deeper bias which we are not capturing. Furthermore, these biases are also present in the manual processes of annotation, which does also affect the resulting data (Lee, N.T., 2018).
 
-Another source of error can be the disagreement, or lack of consistency, with annotation. To try and mitigate this, in the analysis we made sure to overlap samples of the data between the two core annotators, and cross check the results, as well as having a third independent person annotate a random sample of the data for verification. 
+Another source of error can be the disagreement, or lack of consistency, with annotation. To try and mitigate this, during annotation we made sure to overlap samples of the data between the two core annotators, and cross check the results, as well as having a third independent person annotate a random sample of the data for verification. 
 
 ## Limitations
 
