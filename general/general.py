@@ -68,7 +68,7 @@ def get_article_info(row):
 
     try:
         article = BBCArticle(url)
-    except AttributeError:
+    except (AttributeError, TypeError):
         print("Failed to process article {}.".format(url))
         row['date'] = ''
         row['title_from_page'] = ''
