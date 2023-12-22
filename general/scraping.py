@@ -181,6 +181,66 @@ def scrape_articles(topic_json: str = '../data/topics.json', ignore=False):
     scrape_topics(all_topics_json, base_url_topic, ignore=ignore)
 
 
+def scrape_search(search_term: str):
+    """
+
+    :param search_term:
+    :return:
+    """
+    base_url_topic = 'https://www.bbc.co.uk/search'
+
+    chrome = Service()
+    scraper = BBCScraper(service=chrome)
+    scraper.initialise_browser()
+
+    search_data = scraper.return_entities_from_search(base_url_topic, search_term)
+
+    search_name = search_term.lower().replace(" ", "_")
+
+    save_json('../data/metadata/search/' + search_name + ".json", search_data, append=False)
+
+
+def process_searches(directory: str = '../data/metadata/search/'):
+    """
+
+    :param directory:
+    :return:
+    """
+
+    titles, links, searches = [], [], []
+
+    for f_name in glob.glob(directory + '*.json'):
+        with open(f_name, 'r') as j:
+
+            lf = json.loads(j.read())
+
+            for art in lf:
+                titles.append(art['title'])
+                links.append(art['link'])
+                searches.append(f_name.split("/")[-1].split(".")[0])
+
+    df = pd.DataFrame(
+        {
+            "title": titles,
+            "url": links,
+            "search": searches,
+        }
+    )
+
+    # articles can be in multiple topics
+    df = df.groupby(['title', 'url'])['search'].apply(lambda x: ','.join(x)).reset_index()
+
+    # collect full article info
+    tqdm.pandas()
+    df = df.progress_apply(get_article_info, axis=1)
+
+    # get todays date
+    today_date = datetime.today().strftime('%Y%m%d')
+
+    # save scraped output to summary file
+    df.to_csv('../data/summary_' + today_date + '_searches.csv', index=False)
+
+
 def scrape_livefeeds(livefeed_json: str = '../data/livefeeds.json'):
     """
 
@@ -201,8 +261,10 @@ if __name__ == '__main__':
     parser.add_argument('-s', '--scrape', action='store_true', help='Scrape a topic or livefeed.')
     parser.add_argument('-p', '--process', action='store_true', help='Process a list of scraped topics or livefeeds.')
 
-    parser.add_argument('--scrape-from', '--scrape-from', default='../data/', type=str, help='Location of json folder for topics or livefeed.')
-    parser.add_argument('--json-directory', '--jsondirectory', default='../data/metadata/', type=str, help='Location of json folder with scraped jsons.')
+    parser.add_argument('--scrape-from', '--scrape-from', default='../data/', type=str,
+                        help='Location of json folder for topics or livefeed.')
+    parser.add_argument('--json-directory', '--jsondirectory', default='../data/metadata/', type=str,
+                        help='Location of json folder with scraped jsons.')
 
     parser.add_argument('-article', action='store_true', help='Whether to scrape/process articles.')
     parser.add_argument('-livefeed', action='store_true', help='Whether to scrape/process livefeeds.')
@@ -217,13 +279,12 @@ if __name__ == '__main__':
 
     if args['scrape']:
         if handle_articles:
-            scrape_articles(scrape_from+'topics.json')
+            scrape_articles(scrape_from + 'topics.json')
         if handle_livefeeds:
-            scrape_livefeeds(scrape_from+'livefeeds,json')
+            scrape_livefeeds(scrape_from + 'livefeeds,json')
 
     if args['process']:
         if handle_articles:
-            scrape_articles(scraped_jsons+'topics/')
+            scrape_articles(scraped_jsons + 'topics/')
         if handle_livefeeds:
-            scrape_livefeeds(scraped_jsons+'livefeeds/')
-
+            scrape_livefeeds(scraped_jsons + 'livefeeds/')
