@@ -51,7 +51,8 @@ class BBCScraper(Scraper):
 
         return data
 
-    def return_entities(self, base_url, article_handler, browser=None, name='div', find_params={"type": "article"}, params=None):
+    def return_entities(self, base_url, article_handler, browser=None, name: str ='div', find_params: dict ={"type": "article"},
+                        params=None):
         """
 
         :param base_url:
@@ -114,7 +115,8 @@ class BBCScraper(Scraper):
 
         def _return_article_info(page_source, page):
             web_bs = bs(page_source, "lxml")
-            script_source = [script for script in web_bs.find_all('script') if feed in script.text and 'lx-nitro/pageNumber/{}/'.format(page) in script.text]
+            script_source = [script for script in web_bs.find_all('script') if
+                             feed in script.text and 'lx-nitro/pageNumber/{}/'.format(page) in script.text]
 
             page_blogs = []
 
@@ -153,7 +155,7 @@ class BBCScraper(Scraper):
                 if len(sentence) > 0:
                     if sentence[-1] not in punctuation:
                         sentence += '.'
-                    sentence.replace('\n',' ')
+                    sentence.replace('\n', ' ')
                 return sentence
 
             for entry in json_page['body']['results']:
@@ -176,7 +178,8 @@ class BBCScraper(Scraper):
                         except KeyError:
                             continue
                     elif entity['name'] == 'paragraph':
-                        post_sentences += [check_sentence_punctuation(' '.join([s.strip() for s in recurse_children(entity)]))]
+                        post_sentences += [
+                            check_sentence_punctuation(' '.join([s.strip() for s in recurse_children(entity)]))]
                     elif entity['name'] == 'list':
                         for list_item in entity['children']:
                             post_sentences += [
@@ -205,12 +208,12 @@ class BBCScraper(Scraper):
         n_pages = self._return_page_count(feed_url, browser, element="span", class_type="lx-pagination*")
 
         for _p in tqdm(range(1, int(n_pages) + 1)):
-            _url = feed_url+"/page/"+str(_p)
+            _url = feed_url + "/page/" + str(_p)
             page_source = self._return_page_source(_url)
             page_results = _return_article_info(page_source, _p)
             time.sleep(sleep)
 
-            results += [dict(r, **{'url':_url}) for r in page_results]
+            results += [dict(r, **{'url': _url}) for r in page_results]
 
         return results
 
@@ -250,6 +253,49 @@ class BBCScraper(Scraper):
 
         for _p in tqdm(range(1, int(n_pages) + 1)):
             page_results = self.return_entities(topic_url, article_handler=_return_article_info, params={"page": _p})
+            time.sleep(sleep)
+
+            results += page_results
+
+        return results
+
+    def return_entities_from_search(self, base_url, search_term, browser=None, sleep=random.randint(1800.0, 2400.0) / 1000.0):
+        """
+
+        :param search_term:
+        :param base_url:
+        :param topic:
+        :param browser:
+        :param sleep:
+        :return:
+        """
+
+        results = []
+
+        def _return_article_info(article):
+            try:
+                title, link = article.find('span').text, article.find('a', {"href": True})['href']
+                if re.match('^[0-9]{2}\:[0-9]{2}.*', title):
+                    regex = re.compile('.*Headline*')
+                    title, link = article.find('span', {"class": regex}).text, article.find('a', {"href": True})['href']
+                return {
+                    'title': title,
+                    'link': link,
+                }
+            except IndexError:
+                print("Failed to find title or link.")
+            except AttributeError:
+                print("Failed to find title.")
+
+        if not browser:
+            browser = self.browser
+
+        topic_url = base_url + "/?q=" + search_term
+
+        n_pages = self._return_page_count(topic_url, browser)
+
+        for _p in tqdm(range(1, int(n_pages) + 1)):
+            page_results = self.return_entities(topic_url+"&page="+str(_p), name='div', find_params={'class':'ssrcss-rn9nnc-PromoSwitchLayoutAtBreakpoints et5qctl0'}, article_handler=_return_article_info)
             time.sleep(sleep)
 
             results += page_results
