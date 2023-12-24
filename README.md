@@ -1,12 +1,12 @@
 # Overview
 
-This work aims to shed light on bias in BBC reporting on Palestine in a way that is both transparent and reproducible. We analyzed a total of 600 articles and 4000 livefeed posted on the BBC website between October 7, 2023 and December 2, 2023 in an attempt to surface the systematic disparity in how Palestinian and Israeli deaths are treated in the meadia. 
+This work aims to shed light on bias in BBC reporting on Palestine in a way that is both transparent and reproducible. We analyzed a total of 600 articles and 4000 livefeed posts on the BBC website between October 7, 2023 and December 2, 2023 in an attempt to surface the systematic disparity in how Palestinian and Israeli deaths are treated in the media. 
 
 This analysis has been produced by Dana Najjar and Jan Lietava. It is an expansion of [Holly Jackson's work](https://github.com/hollyjackson/casualty_mentions_nyt) analyzing bias in media coverage of Israel and Palestine. 
 
 The pipeline of the study is as follows:
 1. We obtained source articles and livefeed posts from the BBC website by selecting relevant topics (see below for full list) and livefeeds. 
-2. We parsed the individual sentences using the ([Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/)) natural language processing pipeline.
+2. We parsed the individual sentences using the [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/) natural language processing pipeline.
 3. Using the results from step 2, we identified sentences with mentions of death and **manually tagged each one of them** as referring to Palestinians, Israelis, neither or both. None of the tagging was performed automatically.
 
 The raw annotated sentences can be found in `./nlp/fatality_counts/summary/`.
@@ -89,4 +89,4 @@ Another source of error can be the disagreement, or lack of consistency, with an
 ## Limitations
 Although there are limitations to the study, we do not believe they undermine the rigor of the analysis or the validity of the results.
 * Due to the limited direct access to all historical BBC articles, our method does not necessarily capture all articles/posts published relating to Israel/Palestine since October 7, 2023. However, the size of our dataset (~5000 posts/articles) highlights a very large, representative sample. We also scraped different search terms from the BBC website directly, and found 90%+ of those articles present in our dataset between October 7 and December 2. 
-* Since we use a manual word bank for part of the selection, there are references to death that we may not have detected. 
+* Since we use a manual word bank for part of the selection, there are references to death that we may not have detected. To mitigate for this, we also read through some of the articles/sentences in full (especially at the start of annotation) to try and spot any missed mentions.
