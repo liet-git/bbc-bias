@@ -11,6 +11,11 @@ The pipeline of the study is as follows:
 
 The raw annotated sentences can be found in `./nlp/fatality_counts/summary/`.
 
+It was published by [Mona Chalabi](https://monachalabi.com/) in two parts:
+1. ["Mentions of Israeli and Palestinian Deaths in BBC News Coverage" on the 29th of December, 2023.](https://www.instagram.com/monachalabi/p/C1Zv_gMu3AI/?hl=en)
+2. ["Biases in the Language of BBC News Coverage" on the 30th of December, 2023.](https://www.instagram.com/monachalabi/p/C1cWSKCupsB/?hl=en)
+
+
 # Source data
 
 Posts from the BBC were obtained from two sources:
@@ -76,7 +81,33 @@ There is also an option for 'Next', if the sentence contains insufficient detail
 
 ## Casualty mentions over time
 
+<img src="./outputs/bbc_mentions_20231007_to_20231202.png" alt="drawing" width="50%"/>
+
 ## Word bank analysis
+
+| *Word that appears in the article* | *In reference to Israelis* | *In reference to Palestinians* |
+|------------------------------------|----------------------------|--------------------------------|
+| mother/grandmother                 | 51                         | 32                             |
+| daughter/granddaughter             | 35                         | 15                             |
+| father/grandfather                 | 33                         | 9                              |
+| husband                            | 30                         | 5                              |
+| son/grandson                       | 25                         | 11                             |
+| wife                               | 10                         | 24                             |
+| killed                             | 1066                       | 1630                           |
+| died                               | 82                         | 201                            |
+| murder(ed)                         | 101                        | 1                              |
+| massacre(ed)                       | 23                         | 1                              |
+| slaughter(ed)                      | 20                         | 0                              |
+ 
+Below is a list of sentences which use both "killed" and "died":
+
+* *"The ministry says more than 15,200 people have died in the war in Gaza, sparked by Hamas's attack on Israel on 7 October that killed at least 1,200 people."*
+* *"About 700 people have been killed in Israel since Hamas launched its attack on Saturday, with a further 500 having died in Gaza in retaliatory air strikes."*
+* *"At least 1,300 Israelis were killed, and over 1,400 Palestinians have died in air strikes on Gaza."*
+* *"Some 1,200 people have been killed in Israel, while more than 1,000 have died in retaliatory air strikes on Gaza."*
+* *"More than 700 people have been killed in Israel since Saturday and over 500 people have died in Gaza."*
+* *"Israelis  reject  any  comparison  between  the  way  Hamas  kills  civilians  and  the  way  Palestinian  civilians  die  in  their  air  strikes."*
+* *"About 900 people have died in Israel since Saturday's surprise attack, while retaliatory strikes on Gaza have killed almost 690."*
 
 # Bias, sources of error and limitations
 
