@@ -81,7 +81,7 @@ There is also an option for 'Next', if the sentence contains insufficient detail
 
 ## Casualty mentions over time
 
-<img src="./outputs/bbc_mentions_20231007_to_20231202.png" alt="drawing" width="50%"/>
+<img src="./outputs/bbc_mentions_20231007_to_20231202.png" alt="drawing" width=700px/>
 
 ## Word bank analysis
 
@@ -101,13 +101,13 @@ There is also an option for 'Next', if the sentence contains insufficient detail
  
 Below is a list of sentences which use both "killed" and "died":
 
-* *"The ministry says more than 15,200 people have died in the war in Gaza, sparked by Hamas's attack on Israel on 7 October that killed at least 1,200 people."*
-* *"About 700 people have been killed in Israel since Hamas launched its attack on Saturday, with a further 500 having died in Gaza in retaliatory air strikes."*
-* *"At least 1,300 Israelis were killed, and over 1,400 Palestinians have died in air strikes on Gaza."*
-* *"Some 1,200 people have been killed in Israel, while more than 1,000 have died in retaliatory air strikes on Gaza."*
-* *"More than 700 people have been killed in Israel since Saturday and over 500 people have died in Gaza."*
-* *"Israelis  reject  any  comparison  between  the  way  Hamas  kills  civilians  and  the  way  Palestinian  civilians  die  in  their  air  strikes."*
-* *"About 900 people have died in Israel since Saturday's surprise attack, while retaliatory strikes on Gaza have killed almost 690."*
+* [*"The ministry says more than 15,200 people have died in the war in Gaza, sparked by Hamas's attack on Israel on 7 October that killed at least 1,200 people."*](http://bbc.co.uk/news/uk-67604423)
+* [*"About 700 people have been killed in Israel since Hamas launched its attack on Saturday, with a further 500 having died in Gaza in retaliatory air strikes."*](http://bbc.co.uk/news/business-67052562)
+* [*"At least 1,300 Israelis were killed, and over 1,400 Palestinians have died in air strikes on Gaza."*](http://bbc.co.uk/news/world-middle-east-67087583)
+* [*"Some 1,200 people have been killed in Israel, while more than 1,000 have died in retaliatory air strikes on Gaza."*](http://bbc.co.uk/news/uk-67080828)
+* [*"More than 700 people have been killed in Israel since Saturday and over 500 people have died in Gaza."*](http://bbc.co.uk/news/uk-scotland-glasgow-west-67056240)
+* [*"Israelis  reject  any  comparison  between  the  way  Hamas  kills  civilians  and  the  way  Palestinian  civilians  die  in  their  air  strikes."*](http://bbc.co.uk/news/world-middle-east-67065205)
+* [*"About 900 people have died in Israel since Saturday's surprise attack, while retaliatory strikes on Gaza have killed almost 690."*](http://bbc.co.uk/news/uk-67061369)
 
 # Bias, sources of error and limitations
 
