@@ -1,82 +1,70 @@
-# Analysing the bias in BBC reporting of Palestine
-The following code can be used to gather information from BBC articles regarding several topics (a form of grouping on the BBC website). These topics can be found in ```./data/topics.json```. 
+# Analysing the bias in NPR reporting of Palestine
 
-Currently included topics:
-* [Gaza](https://www.bbc.com/news/topics/cgv64vq5z82t)
-* [Israel](https://www.bbc.com/news/topics/c302m85q5ljt)
-* [Israel and the Palestinians](https://www.bbc.com/news/topics/c207p54m4rqt)
-* [Israel-Gaza war](https://www.bbc.com/news/topics/c2vdnvdg6xxt)
-* [Hamas](https://www.bbc.com/news/topics/cnx753jen5zt)
-* [Palestinian Territories](https://www.bbc.com/news/topics/cdl8n2eder8t)
+# Overview
 
-Latest update date: *2023-11-27*
+This work aims to shed light on bias in NPR reporting on Palestine in a way that is both transparent and reproducible. It mirrors the methodology used to [analyze bias in BBC coverage of Palestine](https://github.com/liet-git/bbc-bias/). We analyzed a total of 500 articles published on the NPR website between October 7, 2023 and April 17, 2024. We did not analyze audio transcripts since NPR does not make them available.
 
-Latest dataset: ```./data/summary_20231127.csv``` or ```./outputs/articles_word_bank_full_20231007-20231113.csv``` which contains processed articles data including word bank mentions (see below for more detail).
+This analysis has been produced by Dana Najjar and Jan Lietava. It is an expansion of [Holly Jackson's work](https://github.com/hollyjackson/casualty_mentions_nyt) analyzing bias in media coverage of Israel and Palestine. 
+
+The pipeline of the study is as follows:
+1. We sraped all articles posted on the [Middle East Crisis page](https://www.npr.org/series/1205445976/middle-east-crisis)
+2. We parsed the individual sentences using the [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/) natural language processing pipeline.
+3. Using the results from step 2, we identified sentences with mentions of death and **manually tagged each one of them** as referring to Palestinians, Israelis, neither or both. None of the tagging was performed automatically.
 
 ## Set up and requirements
-Simply clone the repoistory and run:
-```pip3 install -r requirements.txt```
+To run the analysis, simply clone the repository and run ```pip3 install -r requirements.txt```
+
+# Pre-processing
+
+The python notebook in ```./nlp/preprocessing.ipynb``` provides the scripts and code for preparing the raw article data into a format that is processable by the (Stanford CoreNLP package)[https://stanfordnlp.github.io/CoreNLP/]. 
+
+After pre-processing using the above, run the following, replacing ```path/to/``` with your specific path to the NLP package after having downloaded it:
+
+```
+export CLASSPATH=$CLASSPATH:/path/to/stanford-corenlp-4.5.5/*:
+java edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,ner,depparse -filelist all-files.txt -outputFormat json -outputDirectory ./results
+```
+
+This will generate results files in the ```./nlp/results/``` directory for each article. 
+
+# Annotating the sentences
+
+We used the same process as seen [here](https://github.com/hollyjackson/casualty_mentions_nyt#3-automated-and-manual-tagging), copying the text with a few small modifications (highlighted in bold).
+
+We used linguistic annotations from the Stanford CoreNLP preprocessing and extracted sentences which contain mentions of death using a pre-compiled word bank. **However, we widened the "detection" by also including adjectives (rather than just verbs)**. The classification is otherwise identical: each sentence is tagged as either Palestinian, Israeli, both (if the sentence contains multiple victims), or none (if the sentence is unrelated to Palestine and Israel, or if it occurred before October 7, 2023). 
+
+To begin manual annotations, run  ```./nlp/postprocessing.ipynb```. 
+
+The data were manually tagged according to the following general rules:
+
+* The victim must be Palestinian or Israeli or the death otherwise occured in the West Bank, Gaza, or Israel ('48 lands)
+* The mention cannot be speculative (i.e. "He may die") and must have already happened
+* The mention must refer to a fatality event that has happened on or since 10/7
+* Injuries do not count
+  
+There is also an option for 'Next', if the sentence contains insufficient details for classification. If the annotator selects 'Next', the sentence is shown in context with the three preceding and three following sentences. If there is still insufficient details, the annotator can select 'Next' one more time to display the entire text of the article, where 'none' can still be assigned if it is still uncertain. 
+
+## Results
+
+
+## Casualty mentions over time (grouped weekly)
+
+<img src="./outputs/weekly_mentions.png" alt="drawing" width=700px/>
+
+## Casualty mentions over time (daily)
+
+<img src="./outputs/daily_mentions.png" alt="drawing" width=700px/>
+
+# Bias, sources of error and limitations
+
+## Bias in machine learning methods
+
+There are many studies highlighting the inherent bias (racist, Islamophobic, sexist, and other forms) present in machine learning models, and specifially natural language processing, which will also be present in the Stanford CoreNLP linguistic pipeline ([Jacskon, 2023](https://github.com/hollyjackson/casualty_mentions_nyt); Abid et al., 2021; Bolukbasi et al., 2016; Bordia and Bowman, 2019; Lu et al., 2020; Nadeem et al., 2020; Shearer et al., 2019; Sheng et al., 2019; Garimella et al., 2019). Hence, considering this structural, and inherent, anti-Palestinian bias in machine learning techniques, there may be further and deeper bias which we are not capturing. Furthermore, these biases are also present in the manual processes of annotation, which does also affect the resulting data (Lee, N.T., 2018).
+
+Another source of error can be the disagreement, or lack of consistency, with annotation. To try and mitigate this, during annotation we made sure to overlap samples of the data between the two core annotators, and cross check the results, as well as having a third independent person annotate a random sample of the data for verification. 
 
 ## Limitations
+* Although there are limitations to the study, we do not believe they undermine the rigor of the analysis or the validity of the results.
+* Since NPR does not post transcripts for all audio content, we were only able to analyze news articles posted on the website 
+* Since we use a manual word bank for part of the selection, there are references to death that we may not have detected. To mitigate for this, we also read through some of the articles/sentences in full (especially at the start of annotation) to try and spot any missed mentions.
 
-* Currently, only articles are supported (not 'live' articles, which are quite large, and often feature more continuous live news)
-* The topics selected potentially do not cover all articles related to Palestine in the current period (i.e. there may be some published which are not tagged with a certain topic, though coverage seems quite good)
-
-To do:
-* add scraping for the 'search' function of BBC (would be relatively straightforward, but there is a 30 page limit, so would potentially have to include some more complex word partnering to get limited results and repeat).
-
-## Usage
-
-To simply collect all articles, from all topics defined in the above json, run  ```./general/scraping.py```. It is also possible to scrape individual articles/topics using the ```BBCArticle``` and ```BBCScraper``` class respectively.
-
-### NLP/casualty analysis
-
-Using the scraped data, we can follow the procedure from https://github.com/hollyjackson/casualty_mentions_nyt/tree/main to annotate casualty mentions in all articles using Stanford NLP.
-
-To do this:
-
-1. Set up stanford nlp: https://stanfordnlp.github.io/CoreNLP/download.html
-2. Navigate to the nlp directory
-3. Run `./nlp/preprocessing.ipynb` to prepare the dataframe and format of the article files as required
-4. Run which will generate the results files in json format
-```
-    export CLASSPATH=$CLASSPATH:/path/to/stanford-corenlp-4.5.5/*:
-
-    java edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,ner,depparse -filelist all-files.txt -outputFormat json -outputDirectory ./results
-   ```
-5. Run `./nlp/postprocessing.ipynb` to manually start annotating the article files.
-6. Run `./nlp/plot_mentions.ipynb` if desired to plot the results. 
-
-## Analysis 
-
-### Overview of dataset
-
-In ```./data/summary_20231113.csv``` we have all the articles collected from the creation of the topic, until 2023-11-13 (please refer to 'latest update date' at the top of this page), with the following columns:
-* date: date of article
-* href: reference to news/topic url part of whole url
-* text: the span texts of the article, containing all the text in list format
-* title: the title of the article as shown in the topic
-* title_from_page: the title of the article as shown when loaded (can differ to above, often longer)
-* topic: the topic this article was found in (can be multiple)
-* url: full url to the article
-
-#### Casualties analysis
-
-#### Simple mention analysis
-
-The ```./general/base_analysis.py``` contains a simple analysis looking at word count frequencies in the article titles, as well as plotting the mentions of Palestine/Israel/Gaza/Hamas with the following output:
-
-![alt text](./outputs/word_bank_mentions_20231007_to_20231113.png)
-
-The word banks used for each category are:
-```
-'palestine_word_bank' : ['Palestine', 'Palestinian', 'Palestinians'],
-    'israel_word_bank' : ['Israel', 'Israeli', 'Israelis'],
-    'hamas_word_bank' : ['Hamas'],
-    'gaza_word_bank' : ['Gaza'],
-}
-```
-
-For differentiating protest related mentions, I manually checked all the titles that contained the root ("palestine"). 
-
-The processed csv files (containing the 520 articles between 2023-10-07 and 2023-11-13 with the word bank flags [True/False]) can be found in ```./outputs/articles_word_bank_full_20231007-20231113.csv``` and ```./outputs/articles_summary_word_bank.csv```, with the former containing the information at the article level, and the latter grouped by week.

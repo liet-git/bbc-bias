@@ -22,6 +22,7 @@ def get_articles_links() -> list:
     links = [elem.get_attribute('href') for elem in elems]
     return links
 
+
 def get_text_from_articles():
     """
     Parse article text and write to csv
