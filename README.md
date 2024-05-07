@@ -2,7 +2,7 @@
 
 # Overview
 
-This work aims to shed light on bias in NPR reporting on Palestine in a way that is both transparent and reproducible. It mirrors the methodology used to [analyze bias in BBC coverage of Palestine](https://github.com/liet-git/bbc-bias/). We analyzed a total of 500 articles published on the NPR website between October 7, 2023 and April 22, 2024. We did not analyze audio transcripts since NPR does not make them available.
+This work aims to shed light on bias in NPR reporting on Palestine in a way that is both transparent and reproducible. It mirrors the methodology used to [analyze bias in BBC coverage of Palestine](https://github.com/liet-git/bbc-bias/). We analyzed a total of 500 articles published on the NPR website between October 7, 2023 and April 17, 2024. We did not analyze audio transcripts since NPR does not make them available.
 
 This analysis has been produced by Dana Najjar and Jan Lietava. It is an expansion of [Holly Jackson's work](https://github.com/hollyjackson/casualty_mentions_nyt) analyzing bias in media coverage of Israel and Palestine. 
 
@@ -46,26 +46,14 @@ There is also an option for 'Next', if the sentence contains insufficient detail
 
 ## Results
 
-## Casualty mentions over time
 
-<img src="./outputs/bbc_mentions_20231007_to_20231202.png" alt="drawing" width=700px/>
+## Casualty mentions over time (grouped weekly)
 
-## Word bank analysis
+<img src="./outputs/weekly_mentions.png" alt="drawing" width=700px/>
 
-| *Word that appears in the article* | *In reference to Israelis* | *In reference to Palestinians* |
-|------------------------------------|----------------------------|--------------------------------|
-| mother/grandmother                 | 51                         | 32                             |
-| daughter/granddaughter             | 35                         | 15                             |
-| father/grandfather                 | 33                         | 9                              |
-| husband                            | 30                         | 5                              |
-| son/grandson                       | 25                         | 11                             |
-| wife                               | 10                         | 24                             |
-| killed                             | 1066                       | 1630                           |
-| died                               | 82                         | 201                            |
-| murder(ed)                         | 101                        | 1                              |
-| massacre(ed)                       | 23                         | 1                              |
-| slaughter(ed)                      | 20                         | 0                              |
+## Casualty mentions over time (daily)
 
+<img src="./outputs/daily_mentions.png" alt="drawing" width=700px/>
 
 # Bias, sources of error and limitations
 
