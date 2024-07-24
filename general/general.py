@@ -4,6 +4,8 @@ import time
 import random
 import os
 
+import requests.exceptions
+
 from entities.bbc_article import BBCArticle
 
 
@@ -66,19 +68,23 @@ def return_article_dataset(directory: str):
 def get_article_info(row):
     url = row['url']
 
+    row['date'] = ''
+    row['title_from_page'] = ''
+    row['text'] = ''
+
+    if not url or url == '':
+        return row
+
     try:
         article = BBCArticle(url)
-    except (AttributeError, TypeError):
+    except (AttributeError, TypeError, requests.exceptions.ConnectionError):
         print("Failed to process article {}.".format(url))
-        row['date'] = ''
-        row['title_from_page'] = ''
-        row['text'] = ''
         return row
 
     row['date'] = article.date
     row['title_from_page'] = article.title
     row['text'] = article.body
 
-    time.sleep(random.randint(400.0, 500.0) / 1000.0)
+    time.sleep(random.randint(600.0, 800.0) / 1000.0)
 
     return row

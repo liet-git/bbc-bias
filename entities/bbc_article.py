@@ -6,6 +6,7 @@ class BBCArticle(Entity):
 
     def __init__(self, url: str):
         super(BBCArticle, self).__init__(url)
+        self.url = url
         self.date = self.get_date()
 
     def get_body(self) -> list:
@@ -16,7 +17,11 @@ class BBCArticle(Entity):
         return self.soup.find(id="main-heading").text
 
     def get_date(self) -> str:
-        return self.soup.find(attrs={'data-testid': 'timestamp'})['datetime']
+        try:
+            return self.soup.find(attrs={'data-testid': 'timestamp'})['datetime']
+        except KeyError:
+            print("Failed to find date for article: {}.".format(self.url))
+            return ''
 
     def save_json(self, directory, name=None):
         item = {

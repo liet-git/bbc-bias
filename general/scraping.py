@@ -285,6 +285,6 @@ if __name__ == '__main__':
 
     if args['process']:
         if handle_articles:
-            scrape_articles(scraped_jsons + 'topics/')
+            process_articles(scraped_jsons + 'topics/')
         if handle_livefeeds:
-            scrape_livefeeds(scraped_jsons + 'livefeeds/')
+            process_livefeeds(scraped_jsons + 'livefeeds/')
