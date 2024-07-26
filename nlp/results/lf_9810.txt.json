@@ -1,0 +1,5443 @@
+{
+  "docId": "lf_9810.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "F"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "F",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 3,
+          "dependentGloss": "N"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 4,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 5,
+          "dependentGloss": "S"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 6,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 7,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 8,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "F",
+          "dependent": 9,
+          "dependentGloss": "A-R-T"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "F",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "F"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "F",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 3,
+          "dependentGloss": "N"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 4,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 5,
+          "dependentGloss": "S"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 6,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 7,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 8,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "F",
+          "dependent": 9,
+          "dependentGloss": "A-R-T"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "F",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "F"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "F",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 3,
+          "dependentGloss": "N"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 4,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 5,
+          "dependentGloss": "S"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 6,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 7,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "A-R-T",
+          "dependent": 8,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "F",
+          "dependent": 9,
+          "dependentGloss": "A-R-T"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "F",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "F",
+          "originalText": "F",
+          "lemma": "f",
+          "characterOffsetBegin": 1,
+          "characterOffsetEnd": 2,
+          "pos": "NN",
+          "ner": "O",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 2,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 2,
+          "characterOffsetEnd": 3,
+          "pos": "HYPH",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 3,
+          "word": "N",
+          "originalText": "N",
+          "lemma": "n",
+          "characterOffsetBegin": 3,
+          "characterOffsetEnd": 4,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 4,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 4,
+          "characterOffsetEnd": 5,
+          "pos": "HYPH",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 5,
+          "word": "S",
+          "originalText": "S",
+          "lemma": "s",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 6,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 6,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 6,
+          "characterOffsetEnd": 7,
+          "pos": "HYPH",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 7,
+          "word": "T",
+          "originalText": "T",
+          "lemma": "t",
+          "characterOffsetBegin": 7,
+          "characterOffsetEnd": 8,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 8,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 8,
+          "characterOffsetEnd": 9,
+          "pos": "HYPH",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 9,
+          "word": "A-R-T",
+          "originalText": "A-R-T",
+          "lemma": "a-r-t",
+          "characterOffsetBegin": 9,
+          "characterOffsetEnd": 14,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 10,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 15,
+          "pos": ".",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "E-N-D"
+        },
+        {
+          "dep": "nummod",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 1,
+          "dependentGloss": "9810"
+        },
+        {
+          "dep": "compound",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 2,
+          "dependentGloss": "F"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 3,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 4,
+          "dependentGloss": "N"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 5,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "E-N-D"
+        },
+        {
+          "dep": "nummod",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 1,
+          "dependentGloss": "9810"
+        },
+        {
+          "dep": "compound",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 2,
+          "dependentGloss": "F"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 3,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 4,
+          "dependentGloss": "N"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 5,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "E-N-D"
+        },
+        {
+          "dep": "nummod",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 1,
+          "dependentGloss": "9810"
+        },
+        {
+          "dep": "compound",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 2,
+          "dependentGloss": "F"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 3,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 4,
+          "dependentGloss": "N"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 5,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "E-N-D",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 10,
+          "docTokenEnd": 11,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "9810",
+          "characterOffsetBegin": 16,
+          "characterOffsetEnd": 20,
+          "ner": "NUMBER",
+          "normalizedNER": "9810.0",
+          "nerConfidences": {
+            "NUMBER": -1
+          }
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "9810",
+          "originalText": "9810",
+          "lemma": "9810",
+          "characterOffsetBegin": 16,
+          "characterOffsetEnd": 20,
+          "pos": "CD",
+          "ner": "NUMBER",
+          "normalizedNER": "9810.0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "F",
+          "originalText": "F",
+          "lemma": "f",
+          "characterOffsetBegin": 21,
+          "characterOffsetEnd": 22,
+          "pos": "NN",
+          "ner": "O",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 3,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 22,
+          "characterOffsetEnd": 23,
+          "pos": "HYPH",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 4,
+          "word": "N",
+          "originalText": "N",
+          "lemma": "n",
+          "characterOffsetBegin": 23,
+          "characterOffsetEnd": 24,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 5,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 24,
+          "characterOffsetEnd": 25,
+          "pos": "HYPH",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 6,
+          "word": "E-N-D",
+          "originalText": "E-N-D",
+          "lemma": "e-n-d",
+          "characterOffsetBegin": 25,
+          "characterOffsetEnd": 30,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 7,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 30,
+          "characterOffsetEnd": 31,
+          "pos": ".",
+          "ner": "O",
+          "before": "",
+          "after": "  "
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "D"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "D",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "D",
+          "dependent": 3,
+          "dependentGloss": "A-T-E-S-T-A-R-T"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "D",
+          "dependent": 4,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "D"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "D",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "D",
+          "dependent": 3,
+          "dependentGloss": "A-T-E-S-T-A-R-T"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "D",
+          "dependent": 4,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "D"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "D",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "D",
+          "dependent": 3,
+          "dependentGloss": "A-T-E-S-T-A-R-T"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "D",
+          "dependent": 4,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "D",
+          "originalText": "D",
+          "lemma": "d",
+          "characterOffsetBegin": 33,
+          "characterOffsetEnd": 34,
+          "pos": "NN",
+          "ner": "O",
+          "before": "  ",
+          "after": ""
+        },
+        {
+          "index": 2,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 34,
+          "characterOffsetEnd": 35,
+          "pos": ":",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 3,
+          "word": "A-T-E-S-T-A-R-T",
+          "originalText": "A-T-E-S-T-A-R-T",
+          "lemma": "a-t-e-s-t-a-r-t",
+          "characterOffsetBegin": 35,
+          "characterOffsetEnd": 50,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 4,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 50,
+          "characterOffsetEnd": 51,
+          "pos": ".",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "A-T-E-E-N-D"
+        },
+        {
+          "dep": "nummod",
+          "governor": 4,
+          "governorGloss": "A-T-E-E-N-D",
+          "dependent": 1,
+          "dependentGloss": "2024-04-20"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "A-T-E-E-N-D",
+          "dependent": 2,
+          "dependentGloss": "D"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "A-T-E-E-N-D",
+          "dependent": 3,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "A-T-E-E-N-D",
+          "dependent": 5,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "A-T-E-E-N-D"
+        },
+        {
+          "dep": "nummod",
+          "governor": 4,
+          "governorGloss": "A-T-E-E-N-D",
+          "dependent": 1,
+          "dependentGloss": "2024-04-20"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "A-T-E-E-N-D",
+          "dependent": 2,
+          "dependentGloss": "D"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "A-T-E-E-N-D",
+          "dependent": 3,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "A-T-E-E-N-D",
+          "dependent": 5,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "A-T-E-E-N-D"
+        },
+        {
+          "dep": "nummod",
+          "governor": 4,
+          "governorGloss": "A-T-E-E-N-D",
+          "dependent": 1,
+          "dependentGloss": "2024-04-20"
+        },
+        {
+          "dep": "compound",
+          "governor": 4,
+          "governorGloss": "A-T-E-E-N-D",
+          "dependent": 2,
+          "dependentGloss": "D"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "A-T-E-E-N-D",
+          "dependent": 3,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "A-T-E-E-N-D",
+          "dependent": 5,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 21,
+          "docTokenEnd": 22,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "2024-04-20",
+          "characterOffsetBegin": 52,
+          "characterOffsetEnd": 62,
+          "ner": "DATE",
+          "normalizedNER": "2024-04-20",
+          "nerConfidences": {
+            "DATE": -1
+          },
+          "timex": {
+            "tid": "t1",
+            "type": "DATE",
+            "value": "2024-04-20"
+          }
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "2024-04-20",
+          "originalText": "2024-04-20",
+          "lemma": "2024-04-20",
+          "characterOffsetBegin": 52,
+          "characterOffsetEnd": 62,
+          "pos": "CD",
+          "ner": "DATE",
+          "normalizedNER": "2024-04-20",
+          "before": " ",
+          "after": " ",
+          "timex": {
+            "tid": "t1",
+            "type": "DATE",
+            "value": "2024-04-20"
+          }
+        },
+        {
+          "index": 2,
+          "word": "D",
+          "originalText": "D",
+          "lemma": "d",
+          "characterOffsetBegin": 63,
+          "characterOffsetEnd": 64,
+          "pos": "NN",
+          "ner": "O",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 3,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 64,
+          "characterOffsetEnd": 65,
+          "pos": "HYPH",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 4,
+          "word": "A-T-E-E-N-D",
+          "originalText": "A-T-E-E-N-D",
+          "lemma": "a-t-e-e-n-d",
+          "characterOffsetBegin": 65,
+          "characterOffsetEnd": 76,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 5,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 76,
+          "characterOffsetEnd": 77,
+          "pos": ".",
+          "ner": "O",
+          "before": "",
+          "after": "  "
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 3,
+          "dependentGloss": "I"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 4,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 5,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 6,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 7,
+          "dependentGloss": "L"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 8,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 9,
+          "dependentGloss": "E-S-T-A-R-T"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 3,
+          "dependentGloss": "I"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 4,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 5,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 6,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 7,
+          "dependentGloss": "L"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 8,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 9,
+          "dependentGloss": "E-S-T-A-R-T"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 3,
+          "dependentGloss": "I"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 4,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 5,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 6,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 7,
+          "dependentGloss": "L"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-S-T-A-R-T",
+          "dependent": 8,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 9,
+          "dependentGloss": "E-S-T-A-R-T"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "T",
+          "originalText": "T",
+          "lemma": "t",
+          "characterOffsetBegin": 79,
+          "characterOffsetEnd": 80,
+          "pos": "NN",
+          "ner": "O",
+          "before": "  ",
+          "after": ""
+        },
+        {
+          "index": 2,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 80,
+          "characterOffsetEnd": 81,
+          "pos": ":",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 3,
+          "word": "I",
+          "originalText": "I",
+          "lemma": "i",
+          "characterOffsetBegin": 81,
+          "characterOffsetEnd": 82,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 4,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 82,
+          "characterOffsetEnd": 83,
+          "pos": "HYPH",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 5,
+          "word": "T",
+          "originalText": "T",
+          "lemma": "t",
+          "characterOffsetBegin": 83,
+          "characterOffsetEnd": 84,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 6,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 84,
+          "characterOffsetEnd": 85,
+          "pos": "HYPH",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 7,
+          "word": "L",
+          "originalText": "L",
+          "lemma": "l",
+          "characterOffsetBegin": 85,
+          "characterOffsetEnd": 86,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 8,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 86,
+          "characterOffsetEnd": 87,
+          "pos": "HYPH",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 9,
+          "word": "E-S-T-A-R-T",
+          "originalText": "E-S-T-A-R-T",
+          "lemma": "e-s-t-a-r-t",
+          "characterOffsetBegin": 87,
+          "characterOffsetEnd": 98,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 10,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 98,
+          "characterOffsetEnd": 99,
+          "pos": ".",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "discuss"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "discuss",
+          "dependent": 1,
+          "dependentGloss": "Turkey"
+        },
+        {
+          "dep": "cc",
+          "governor": 3,
+          "governorGloss": "Egypt",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 1,
+          "governorGloss": "Turkey",
+          "dependent": 3,
+          "dependentGloss": "Egypt"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 4,
+          "governorGloss": "discuss",
+          "dependent": 5,
+          "dependentGloss": "boosting"
+        },
+        {
+          "dep": "compound",
+          "governor": 7,
+          "governorGloss": "aid",
+          "dependent": 6,
+          "dependentGloss": "Gaza"
+        },
+        {
+          "dep": "obj",
+          "governor": 5,
+          "governorGloss": "boosting",
+          "dependent": 7,
+          "dependentGloss": "aid"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "discuss",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "discuss"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "discuss",
+          "dependent": 1,
+          "dependentGloss": "Turkey"
+        },
+        {
+          "dep": "cc",
+          "governor": 3,
+          "governorGloss": "Egypt",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 1,
+          "governorGloss": "Turkey",
+          "dependent": 3,
+          "dependentGloss": "Egypt"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "discuss",
+          "dependent": 3,
+          "dependentGloss": "Egypt"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 4,
+          "governorGloss": "discuss",
+          "dependent": 5,
+          "dependentGloss": "boosting"
+        },
+        {
+          "dep": "compound",
+          "governor": 7,
+          "governorGloss": "aid",
+          "dependent": 6,
+          "dependentGloss": "Gaza"
+        },
+        {
+          "dep": "obj",
+          "governor": 5,
+          "governorGloss": "boosting",
+          "dependent": 7,
+          "dependentGloss": "aid"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "discuss",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "discuss"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "discuss",
+          "dependent": 1,
+          "dependentGloss": "Turkey"
+        },
+        {
+          "dep": "cc",
+          "governor": 3,
+          "governorGloss": "Egypt",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 1,
+          "governorGloss": "Turkey",
+          "dependent": 3,
+          "dependentGloss": "Egypt"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "discuss",
+          "dependent": 3,
+          "dependentGloss": "Egypt"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 4,
+          "governorGloss": "discuss",
+          "dependent": 5,
+          "dependentGloss": "boosting"
+        },
+        {
+          "dep": "compound",
+          "governor": 7,
+          "governorGloss": "aid",
+          "dependent": 6,
+          "dependentGloss": "Gaza"
+        },
+        {
+          "dep": "obj",
+          "governor": 5,
+          "governorGloss": "boosting",
+          "dependent": 7,
+          "dependentGloss": "aid"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "discuss",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 36,
+          "docTokenEnd": 37,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "Turkey",
+          "characterOffsetBegin": 100,
+          "characterOffsetEnd": 106,
+          "ner": "COUNTRY",
+          "nerConfidences": {
+            "LOCATION": 0.99755807566991
+          }
+        },
+        {
+          "docTokenBegin": 38,
+          "docTokenEnd": 39,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "Egypt",
+          "characterOffsetBegin": 111,
+          "characterOffsetEnd": 116,
+          "ner": "COUNTRY",
+          "nerConfidences": {
+            "LOCATION": 0.99903081940577
+          }
+        },
+        {
+          "docTokenBegin": 41,
+          "docTokenEnd": 42,
+          "tokenBegin": 5,
+          "tokenEnd": 6,
+          "text": "Gaza",
+          "characterOffsetBegin": 134,
+          "characterOffsetEnd": 138,
+          "ner": "LOCATION",
+          "nerConfidences": {
+            "LOCATION": 0.98276355888496
+          }
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "Turkey",
+          "originalText": "Turkey",
+          "lemma": "Turkey",
+          "characterOffsetBegin": 100,
+          "characterOffsetEnd": 106,
+          "pos": "NNP",
+          "ner": "COUNTRY",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "and",
+          "originalText": "and",
+          "lemma": "and",
+          "characterOffsetBegin": 107,
+          "characterOffsetEnd": 110,
+          "pos": "CC",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "Egypt",
+          "originalText": "Egypt",
+          "lemma": "Egypt",
+          "characterOffsetBegin": 111,
+          "characterOffsetEnd": 116,
+          "pos": "NNP",
+          "ner": "COUNTRY",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "discuss",
+          "originalText": "discuss",
+          "lemma": "discuss",
+          "characterOffsetBegin": 117,
+          "characterOffsetEnd": 124,
+          "pos": "VBP",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "boosting",
+          "originalText": "boosting",
+          "lemma": "boost",
+          "characterOffsetBegin": 125,
+          "characterOffsetEnd": 133,
+          "pos": "VBG",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "Gaza",
+          "originalText": "Gaza",
+          "lemma": "Gaza",
+          "characterOffsetBegin": 134,
+          "characterOffsetEnd": 138,
+          "pos": "NNP",
+          "ner": "LOCATION",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "aid",
+          "originalText": "aid",
+          "lemma": "aid",
+          "characterOffsetBegin": 139,
+          "characterOffsetEnd": 142,
+          "pos": "NN",
+          "ner": "O",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 8,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 142,
+          "characterOffsetEnd": 143,
+          "pos": ".",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 3,
+          "dependentGloss": "I"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 4,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 5,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 6,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 7,
+          "dependentGloss": "L"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 8,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 9,
+          "dependentGloss": "E-E-N-D"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 3,
+          "dependentGloss": "I"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 4,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 5,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 6,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 7,
+          "dependentGloss": "L"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 8,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 9,
+          "dependentGloss": "E-E-N-D"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 1,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 3,
+          "dependentGloss": "I"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 4,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 5,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 6,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 7,
+          "dependentGloss": "L"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "E-E-N-D",
+          "dependent": 8,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "dep",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 9,
+          "dependentGloss": "E-E-N-D"
+        },
+        {
+          "dep": "punct",
+          "governor": 1,
+          "governorGloss": "T",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "T",
+          "originalText": "T",
+          "lemma": "t",
+          "characterOffsetBegin": 144,
+          "characterOffsetEnd": 145,
+          "pos": "NN",
+          "ner": "O",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 2,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 145,
+          "characterOffsetEnd": 146,
+          "pos": ":",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 3,
+          "word": "I",
+          "originalText": "I",
+          "lemma": "i",
+          "characterOffsetBegin": 146,
+          "characterOffsetEnd": 147,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 4,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 147,
+          "characterOffsetEnd": 148,
+          "pos": "HYPH",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 5,
+          "word": "T",
+          "originalText": "T",
+          "lemma": "t",
+          "characterOffsetBegin": 148,
+          "characterOffsetEnd": 149,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 6,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 149,
+          "characterOffsetEnd": 150,
+          "pos": "HYPH",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 7,
+          "word": "L",
+          "originalText": "L",
+          "lemma": "l",
+          "characterOffsetBegin": 150,
+          "characterOffsetEnd": 151,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 8,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 151,
+          "characterOffsetEnd": 152,
+          "pos": "HYPH",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 9,
+          "word": "E-E-N-D",
+          "originalText": "E-E-N-D",
+          "lemma": "e-e-n-d",
+          "characterOffsetBegin": 152,
+          "characterOffsetEnd": 159,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 10,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 159,
+          "characterOffsetEnd": 160,
+          "pos": ".",
+          "ner": "O",
+          "before": "",
+          "after": "  "
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "E-X-T-S-T-A-R-T"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "E-X-T-S-T-A-R-T",
+          "dependent": 1,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "E-X-T-S-T-A-R-T",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "E-X-T-S-T-A-R-T",
+          "dependent": 4,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "E-X-T-S-T-A-R-T"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "E-X-T-S-T-A-R-T",
+          "dependent": 1,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "E-X-T-S-T-A-R-T",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "E-X-T-S-T-A-R-T",
+          "dependent": 4,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "E-X-T-S-T-A-R-T"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "E-X-T-S-T-A-R-T",
+          "dependent": 1,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "E-X-T-S-T-A-R-T",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "E-X-T-S-T-A-R-T",
+          "dependent": 4,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "T",
+          "originalText": "T",
+          "lemma": "t",
+          "characterOffsetBegin": 162,
+          "characterOffsetEnd": 163,
+          "pos": "NN",
+          "ner": "O",
+          "before": "  ",
+          "after": ""
+        },
+        {
+          "index": 2,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 163,
+          "characterOffsetEnd": 164,
+          "pos": "HYPH",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 3,
+          "word": "E-X-T-S-T-A-R-T",
+          "originalText": "E-X-T-S-T-A-R-T",
+          "lemma": "e-x-t-s-t-a-r-t",
+          "characterOffsetBegin": 164,
+          "characterOffsetEnd": 179,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 4,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 179,
+          "characterOffsetEnd": 180,
+          "pos": ".",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "getting"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "aux",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 2,
+          "dependentGloss": "'re"
+        },
+        {
+          "dep": "obj",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 4,
+          "dependentGloss": "lines"
+        },
+        {
+          "dep": "case",
+          "governor": 6,
+          "governorGloss": "now",
+          "dependent": 5,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "obl",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 6,
+          "dependentGloss": "now"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "conference",
+          "dependent": 7,
+          "dependentGloss": "from"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "conference",
+          "dependent": 8,
+          "dependentGloss": "joint"
+        },
+        {
+          "dep": "compound",
+          "governor": 10,
+          "governorGloss": "conference",
+          "dependent": 9,
+          "dependentGloss": "news"
+        },
+        {
+          "dep": "obl",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 10,
+          "dependentGloss": "conference"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "Fidan",
+          "dependent": 11,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "amod",
+          "governor": 14,
+          "governorGloss": "Minister",
+          "dependent": 12,
+          "dependentGloss": "Turkish"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "Minister",
+          "dependent": 13,
+          "dependentGloss": "Foreign"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "Fidan",
+          "dependent": 14,
+          "dependentGloss": "Minister"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "Fidan",
+          "dependent": 15,
+          "dependentGloss": "Hakan"
+        },
+        {
+          "dep": "nmod",
+          "governor": 10,
+          "governorGloss": "conference",
+          "dependent": 16,
+          "dependentGloss": "Fidan"
+        },
+        {
+          "dep": "cc",
+          "governor": 20,
+          "governorGloss": "counterpart",
+          "dependent": 17,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 20,
+          "governorGloss": "counterpart",
+          "dependent": 18,
+          "dependentGloss": "his"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "counterpart",
+          "dependent": 19,
+          "dependentGloss": "Egyptian"
+        },
+        {
+          "dep": "conj",
+          "governor": 16,
+          "governorGloss": "Fidan",
+          "dependent": 20,
+          "dependentGloss": "counterpart"
+        },
+        {
+          "dep": "compound",
+          "governor": 22,
+          "governorGloss": "Shoukry",
+          "dependent": 21,
+          "dependentGloss": "Sameh"
+        },
+        {
+          "dep": "dep",
+          "governor": 20,
+          "governorGloss": "counterpart",
+          "dependent": 22,
+          "dependentGloss": "Shoukry"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 23,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "case",
+          "governor": 25,
+          "governorGloss": "talks",
+          "dependent": 24,
+          "dependentGloss": "after"
+        },
+        {
+          "dep": "obl",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 25,
+          "dependentGloss": "talks"
+        },
+        {
+          "dep": "advmod",
+          "governor": 25,
+          "governorGloss": "talks",
+          "dependent": 26,
+          "dependentGloss": "earlier"
+        },
+        {
+          "dep": "case",
+          "governor": 28,
+          "governorGloss": "Istanbul",
+          "dependent": 27,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "obl",
+          "governor": 26,
+          "governorGloss": "earlier",
+          "dependent": 28,
+          "dependentGloss": "Istanbul"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 29,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "getting"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "aux",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 2,
+          "dependentGloss": "'re"
+        },
+        {
+          "dep": "obj",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 4,
+          "dependentGloss": "lines"
+        },
+        {
+          "dep": "case",
+          "governor": 6,
+          "governorGloss": "now",
+          "dependent": 5,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "obl:in",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 6,
+          "dependentGloss": "now"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "conference",
+          "dependent": 7,
+          "dependentGloss": "from"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "conference",
+          "dependent": 8,
+          "dependentGloss": "joint"
+        },
+        {
+          "dep": "compound",
+          "governor": 10,
+          "governorGloss": "conference",
+          "dependent": 9,
+          "dependentGloss": "news"
+        },
+        {
+          "dep": "obl:from",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 10,
+          "dependentGloss": "conference"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "Fidan",
+          "dependent": 11,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "amod",
+          "governor": 14,
+          "governorGloss": "Minister",
+          "dependent": 12,
+          "dependentGloss": "Turkish"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "Minister",
+          "dependent": 13,
+          "dependentGloss": "Foreign"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "Fidan",
+          "dependent": 14,
+          "dependentGloss": "Minister"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "Fidan",
+          "dependent": 15,
+          "dependentGloss": "Hakan"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 10,
+          "governorGloss": "conference",
+          "dependent": 16,
+          "dependentGloss": "Fidan"
+        },
+        {
+          "dep": "cc",
+          "governor": 20,
+          "governorGloss": "counterpart",
+          "dependent": 17,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 20,
+          "governorGloss": "counterpart",
+          "dependent": 18,
+          "dependentGloss": "his"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "counterpart",
+          "dependent": 19,
+          "dependentGloss": "Egyptian"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 10,
+          "governorGloss": "conference",
+          "dependent": 20,
+          "dependentGloss": "counterpart"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 16,
+          "governorGloss": "Fidan",
+          "dependent": 20,
+          "dependentGloss": "counterpart"
+        },
+        {
+          "dep": "compound",
+          "governor": 22,
+          "governorGloss": "Shoukry",
+          "dependent": 21,
+          "dependentGloss": "Sameh"
+        },
+        {
+          "dep": "dep",
+          "governor": 20,
+          "governorGloss": "counterpart",
+          "dependent": 22,
+          "dependentGloss": "Shoukry"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 23,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "case",
+          "governor": 25,
+          "governorGloss": "talks",
+          "dependent": 24,
+          "dependentGloss": "after"
+        },
+        {
+          "dep": "obl:after",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 25,
+          "dependentGloss": "talks"
+        },
+        {
+          "dep": "advmod",
+          "governor": 25,
+          "governorGloss": "talks",
+          "dependent": 26,
+          "dependentGloss": "earlier"
+        },
+        {
+          "dep": "case",
+          "governor": 28,
+          "governorGloss": "Istanbul",
+          "dependent": 27,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "obl:in",
+          "governor": 26,
+          "governorGloss": "earlier",
+          "dependent": 28,
+          "dependentGloss": "Istanbul"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 29,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "getting"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "aux",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 2,
+          "dependentGloss": "'re"
+        },
+        {
+          "dep": "obj",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 4,
+          "dependentGloss": "lines"
+        },
+        {
+          "dep": "case",
+          "governor": 6,
+          "governorGloss": "now",
+          "dependent": 5,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "obl:in",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 6,
+          "dependentGloss": "now"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "conference",
+          "dependent": 7,
+          "dependentGloss": "from"
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "conference",
+          "dependent": 8,
+          "dependentGloss": "joint"
+        },
+        {
+          "dep": "compound",
+          "governor": 10,
+          "governorGloss": "conference",
+          "dependent": 9,
+          "dependentGloss": "news"
+        },
+        {
+          "dep": "obl:from",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 10,
+          "dependentGloss": "conference"
+        },
+        {
+          "dep": "case",
+          "governor": 16,
+          "governorGloss": "Fidan",
+          "dependent": 11,
+          "dependentGloss": "with"
+        },
+        {
+          "dep": "amod",
+          "governor": 14,
+          "governorGloss": "Minister",
+          "dependent": 12,
+          "dependentGloss": "Turkish"
+        },
+        {
+          "dep": "compound",
+          "governor": 14,
+          "governorGloss": "Minister",
+          "dependent": 13,
+          "dependentGloss": "Foreign"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "Fidan",
+          "dependent": 14,
+          "dependentGloss": "Minister"
+        },
+        {
+          "dep": "compound",
+          "governor": 16,
+          "governorGloss": "Fidan",
+          "dependent": 15,
+          "dependentGloss": "Hakan"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 10,
+          "governorGloss": "conference",
+          "dependent": 16,
+          "dependentGloss": "Fidan"
+        },
+        {
+          "dep": "cc",
+          "governor": 20,
+          "governorGloss": "counterpart",
+          "dependent": 17,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 20,
+          "governorGloss": "counterpart",
+          "dependent": 18,
+          "dependentGloss": "his"
+        },
+        {
+          "dep": "amod",
+          "governor": 20,
+          "governorGloss": "counterpart",
+          "dependent": 19,
+          "dependentGloss": "Egyptian"
+        },
+        {
+          "dep": "nmod:with",
+          "governor": 10,
+          "governorGloss": "conference",
+          "dependent": 20,
+          "dependentGloss": "counterpart"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 16,
+          "governorGloss": "Fidan",
+          "dependent": 20,
+          "dependentGloss": "counterpart"
+        },
+        {
+          "dep": "compound",
+          "governor": 22,
+          "governorGloss": "Shoukry",
+          "dependent": 21,
+          "dependentGloss": "Sameh"
+        },
+        {
+          "dep": "dep",
+          "governor": 20,
+          "governorGloss": "counterpart",
+          "dependent": 22,
+          "dependentGloss": "Shoukry"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 23,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "case",
+          "governor": 25,
+          "governorGloss": "talks",
+          "dependent": 24,
+          "dependentGloss": "after"
+        },
+        {
+          "dep": "obl:after",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 25,
+          "dependentGloss": "talks"
+        },
+        {
+          "dep": "advmod",
+          "governor": 25,
+          "governorGloss": "talks",
+          "dependent": 26,
+          "dependentGloss": "earlier"
+        },
+        {
+          "dep": "case",
+          "governor": 28,
+          "governorGloss": "Istanbul",
+          "dependent": 27,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "obl:in",
+          "governor": 26,
+          "governorGloss": "earlier",
+          "dependent": 28,
+          "dependentGloss": "Istanbul"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "getting",
+          "dependent": 29,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 63,
+          "docTokenEnd": 64,
+          "tokenBegin": 5,
+          "tokenEnd": 6,
+          "text": "now",
+          "characterOffsetBegin": 204,
+          "characterOffsetEnd": 207,
+          "ner": "DATE",
+          "normalizedNER": "PRESENT_REF",
+          "nerConfidences": {
+            "DATE": -1
+          },
+          "timex": {
+            "tid": "t2",
+            "type": "DATE",
+            "value": "PRESENT_REF"
+          }
+        },
+        {
+          "docTokenBegin": 69,
+          "docTokenEnd": 70,
+          "tokenBegin": 11,
+          "tokenEnd": 12,
+          "text": "Turkish",
+          "characterOffsetBegin": 240,
+          "characterOffsetEnd": 247,
+          "ner": "NATIONALITY",
+          "nerConfidences": {
+            "MISC": 0.99999769332225
+          }
+        },
+        {
+          "docTokenBegin": 70,
+          "docTokenEnd": 72,
+          "tokenBegin": 12,
+          "tokenEnd": 14,
+          "text": "Foreign Minister",
+          "characterOffsetBegin": 248,
+          "characterOffsetEnd": 264,
+          "ner": "TITLE"
+        },
+        {
+          "docTokenBegin": 72,
+          "docTokenEnd": 74,
+          "tokenBegin": 14,
+          "tokenEnd": 16,
+          "text": "Hakan Fidan",
+          "characterOffsetBegin": 265,
+          "characterOffsetEnd": 276,
+          "ner": "PERSON",
+          "nerConfidences": {
+            "PERSON": 0.9999167670634
+          }
+        },
+        {
+          "docTokenBegin": 76,
+          "docTokenEnd": 77,
+          "tokenBegin": 18,
+          "tokenEnd": 19,
+          "text": "Egyptian",
+          "characterOffsetBegin": 285,
+          "characterOffsetEnd": 293,
+          "ner": "NATIONALITY",
+          "nerConfidences": {
+            "MISC": 0.99999801296052
+          }
+        },
+        {
+          "docTokenBegin": 78,
+          "docTokenEnd": 80,
+          "tokenBegin": 20,
+          "tokenEnd": 22,
+          "text": "Sameh Shoukry",
+          "characterOffsetBegin": 306,
+          "characterOffsetEnd": 319,
+          "ner": "PERSON",
+          "nerConfidences": {
+            "PERSON": 0.99979467510447
+          }
+        },
+        {
+          "docTokenBegin": 85,
+          "docTokenEnd": 86,
+          "tokenBegin": 27,
+          "tokenEnd": 28,
+          "text": "Istanbul",
+          "characterOffsetBegin": 344,
+          "characterOffsetEnd": 352,
+          "ner": "CITY",
+          "nerConfidences": {
+            "LOCATION": 0.99986633959612
+          }
+        },
+        {
+          "docTokenBegin": 75,
+          "docTokenEnd": 76,
+          "tokenBegin": 17,
+          "tokenEnd": 18,
+          "text": "his",
+          "characterOffsetBegin": 281,
+          "characterOffsetEnd": 284,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "We",
+          "originalText": "We",
+          "lemma": "we",
+          "characterOffsetBegin": 181,
+          "characterOffsetEnd": 183,
+          "pos": "PRP",
+          "ner": "O",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 2,
+          "word": "'re",
+          "originalText": "'re",
+          "lemma": "be",
+          "characterOffsetBegin": 183,
+          "characterOffsetEnd": 186,
+          "pos": "VBP",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "getting",
+          "originalText": "getting",
+          "lemma": "get",
+          "characterOffsetBegin": 187,
+          "characterOffsetEnd": 194,
+          "pos": "VBG",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "lines",
+          "originalText": "lines",
+          "lemma": "line",
+          "characterOffsetBegin": 195,
+          "characterOffsetEnd": 200,
+          "pos": "NNS",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "in",
+          "originalText": "in",
+          "lemma": "in",
+          "characterOffsetBegin": 201,
+          "characterOffsetEnd": 203,
+          "pos": "IN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "now",
+          "originalText": "now",
+          "lemma": "now",
+          "characterOffsetBegin": 204,
+          "characterOffsetEnd": 207,
+          "pos": "RB",
+          "ner": "DATE",
+          "normalizedNER": "PRESENT_REF",
+          "before": " ",
+          "after": " ",
+          "timex": {
+            "tid": "t2",
+            "type": "DATE",
+            "value": "PRESENT_REF"
+          }
+        },
+        {
+          "index": 7,
+          "word": "from",
+          "originalText": "from",
+          "lemma": "from",
+          "characterOffsetBegin": 208,
+          "characterOffsetEnd": 212,
+          "pos": "IN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "joint",
+          "originalText": "joint",
+          "lemma": "joint",
+          "characterOffsetBegin": 213,
+          "characterOffsetEnd": 218,
+          "pos": "JJ",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "news",
+          "originalText": "news",
+          "lemma": "news",
+          "characterOffsetBegin": 219,
+          "characterOffsetEnd": 223,
+          "pos": "NN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 10,
+          "word": "conference",
+          "originalText": "conference",
+          "lemma": "conference",
+          "characterOffsetBegin": 224,
+          "characterOffsetEnd": 234,
+          "pos": "NN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 11,
+          "word": "with",
+          "originalText": "with",
+          "lemma": "with",
+          "characterOffsetBegin": 235,
+          "characterOffsetEnd": 239,
+          "pos": "IN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 12,
+          "word": "Turkish",
+          "originalText": "Turkish",
+          "lemma": "Turkish",
+          "characterOffsetBegin": 240,
+          "characterOffsetEnd": 247,
+          "pos": "JJ",
+          "ner": "NATIONALITY",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 13,
+          "word": "Foreign",
+          "originalText": "Foreign",
+          "lemma": "Foreign",
+          "characterOffsetBegin": 248,
+          "characterOffsetEnd": 255,
+          "pos": "NNP",
+          "ner": "TITLE",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 14,
+          "word": "Minister",
+          "originalText": "Minister",
+          "lemma": "Minister",
+          "characterOffsetBegin": 256,
+          "characterOffsetEnd": 264,
+          "pos": "NNP",
+          "ner": "TITLE",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 15,
+          "word": "Hakan",
+          "originalText": "Hakan",
+          "lemma": "Hakan",
+          "characterOffsetBegin": 265,
+          "characterOffsetEnd": 270,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 16,
+          "word": "Fidan",
+          "originalText": "Fidan",
+          "lemma": "Fidan",
+          "characterOffsetBegin": 271,
+          "characterOffsetEnd": 276,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 17,
+          "word": "and",
+          "originalText": "and",
+          "lemma": "and",
+          "characterOffsetBegin": 277,
+          "characterOffsetEnd": 280,
+          "pos": "CC",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 18,
+          "word": "his",
+          "originalText": "his",
+          "lemma": "he",
+          "characterOffsetBegin": 281,
+          "characterOffsetEnd": 284,
+          "pos": "PRP$",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 19,
+          "word": "Egyptian",
+          "originalText": "Egyptian",
+          "lemma": "Egyptian",
+          "characterOffsetBegin": 285,
+          "characterOffsetEnd": 293,
+          "pos": "JJ",
+          "ner": "NATIONALITY",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 20,
+          "word": "counterpart",
+          "originalText": "counterpart",
+          "lemma": "counterpart",
+          "characterOffsetBegin": 294,
+          "characterOffsetEnd": 305,
+          "pos": "NN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 21,
+          "word": "Sameh",
+          "originalText": "Sameh",
+          "lemma": "Sameh",
+          "characterOffsetBegin": 306,
+          "characterOffsetEnd": 311,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 22,
+          "word": "Shoukry",
+          "originalText": "Shoukry",
+          "lemma": "Shoukry",
+          "characterOffsetBegin": 312,
+          "characterOffsetEnd": 319,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 23,
+          "word": ",",
+          "originalText": ",",
+          "lemma": ",",
+          "characterOffsetBegin": 319,
+          "characterOffsetEnd": 320,
+          "pos": ",",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 24,
+          "word": "after",
+          "originalText": "after",
+          "lemma": "after",
+          "characterOffsetBegin": 321,
+          "characterOffsetEnd": 326,
+          "pos": "IN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 25,
+          "word": "talks",
+          "originalText": "talks",
+          "lemma": "talk",
+          "characterOffsetBegin": 327,
+          "characterOffsetEnd": 332,
+          "pos": "NNS",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 26,
+          "word": "earlier",
+          "originalText": "earlier",
+          "lemma": "early",
+          "characterOffsetBegin": 333,
+          "characterOffsetEnd": 340,
+          "pos": "RBR",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 27,
+          "word": "in",
+          "originalText": "in",
+          "lemma": "in",
+          "characterOffsetBegin": 341,
+          "characterOffsetEnd": 343,
+          "pos": "IN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 28,
+          "word": "Istanbul",
+          "originalText": "Istanbul",
+          "lemma": "Istanbul",
+          "characterOffsetBegin": 344,
+          "characterOffsetEnd": 352,
+          "pos": "NNP",
+          "ner": "CITY",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 29,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 352,
+          "characterOffsetEnd": 353,
+          "pos": ".",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "says"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "says",
+          "dependent": 1,
+          "dependentGloss": "Fidan"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "addressed",
+          "dependent": 3,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "cc",
+          "governor": 5,
+          "governorGloss": "Shoukry",
+          "dependent": 4,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 3,
+          "governorGloss": "he",
+          "dependent": 5,
+          "dependentGloss": "Shoukry"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "says",
+          "dependent": 6,
+          "dependentGloss": "addressed"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "situation",
+          "dependent": 7,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "punct",
+          "governor": 10,
+          "governorGloss": "situation",
+          "dependent": 8,
+          "dependentGloss": "\""
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "situation",
+          "dependent": 9,
+          "dependentGloss": "grave"
+        },
+        {
+          "dep": "obj",
+          "governor": 6,
+          "governorGloss": "addressed",
+          "dependent": 10,
+          "dependentGloss": "situation"
+        },
+        {
+          "dep": "punct",
+          "governor": 10,
+          "governorGloss": "situation",
+          "dependent": 11,
+          "dependentGloss": "\""
+        },
+        {
+          "dep": "case",
+          "governor": 13,
+          "governorGloss": "Gaza",
+          "dependent": 12,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod",
+          "governor": 10,
+          "governorGloss": "situation",
+          "dependent": 13,
+          "dependentGloss": "Gaza"
+        },
+        {
+          "dep": "cc",
+          "governor": 15,
+          "governorGloss": "increasing",
+          "dependent": 14,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 6,
+          "governorGloss": "addressed",
+          "dependent": 15,
+          "dependentGloss": "increasing"
+        },
+        {
+          "dep": "amod",
+          "governor": 17,
+          "governorGloss": "aid",
+          "dependent": 16,
+          "dependentGloss": "humanitarian"
+        },
+        {
+          "dep": "obj",
+          "governor": 15,
+          "governorGloss": "increasing",
+          "dependent": 17,
+          "dependentGloss": "aid"
+        },
+        {
+          "dep": "case",
+          "governor": 20,
+          "governorGloss": "territory",
+          "dependent": 18,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "det",
+          "governor": 20,
+          "governorGloss": "territory",
+          "dependent": 19,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "obl",
+          "governor": 15,
+          "governorGloss": "increasing",
+          "dependent": 20,
+          "dependentGloss": "territory"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "says",
+          "dependent": 21,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "says"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "says",
+          "dependent": 1,
+          "dependentGloss": "Fidan"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "addressed",
+          "dependent": 3,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 15,
+          "governorGloss": "increasing",
+          "dependent": 3,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "cc",
+          "governor": 5,
+          "governorGloss": "Shoukry",
+          "dependent": 4,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 3,
+          "governorGloss": "he",
+          "dependent": 5,
+          "dependentGloss": "Shoukry"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "addressed",
+          "dependent": 5,
+          "dependentGloss": "Shoukry"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "says",
+          "dependent": 6,
+          "dependentGloss": "addressed"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "situation",
+          "dependent": 7,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "punct",
+          "governor": 10,
+          "governorGloss": "situation",
+          "dependent": 8,
+          "dependentGloss": "\""
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "situation",
+          "dependent": 9,
+          "dependentGloss": "grave"
+        },
+        {
+          "dep": "obj",
+          "governor": 6,
+          "governorGloss": "addressed",
+          "dependent": 10,
+          "dependentGloss": "situation"
+        },
+        {
+          "dep": "punct",
+          "governor": 10,
+          "governorGloss": "situation",
+          "dependent": 11,
+          "dependentGloss": "\""
+        },
+        {
+          "dep": "case",
+          "governor": 13,
+          "governorGloss": "Gaza",
+          "dependent": 12,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 10,
+          "governorGloss": "situation",
+          "dependent": 13,
+          "dependentGloss": "Gaza"
+        },
+        {
+          "dep": "cc",
+          "governor": 15,
+          "governorGloss": "increasing",
+          "dependent": 14,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "says",
+          "dependent": 15,
+          "dependentGloss": "increasing"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 6,
+          "governorGloss": "addressed",
+          "dependent": 15,
+          "dependentGloss": "increasing"
+        },
+        {
+          "dep": "amod",
+          "governor": 17,
+          "governorGloss": "aid",
+          "dependent": 16,
+          "dependentGloss": "humanitarian"
+        },
+        {
+          "dep": "obj",
+          "governor": 15,
+          "governorGloss": "increasing",
+          "dependent": 17,
+          "dependentGloss": "aid"
+        },
+        {
+          "dep": "case",
+          "governor": 20,
+          "governorGloss": "territory",
+          "dependent": 18,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "det",
+          "governor": 20,
+          "governorGloss": "territory",
+          "dependent": 19,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "obl:to",
+          "governor": 15,
+          "governorGloss": "increasing",
+          "dependent": 20,
+          "dependentGloss": "territory"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "says",
+          "dependent": 21,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "says"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "says",
+          "dependent": 1,
+          "dependentGloss": "Fidan"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "addressed",
+          "dependent": 3,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 15,
+          "governorGloss": "increasing",
+          "dependent": 3,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "cc",
+          "governor": 5,
+          "governorGloss": "Shoukry",
+          "dependent": 4,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 3,
+          "governorGloss": "he",
+          "dependent": 5,
+          "dependentGloss": "Shoukry"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "addressed",
+          "dependent": 5,
+          "dependentGloss": "Shoukry"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "says",
+          "dependent": 6,
+          "dependentGloss": "addressed"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "situation",
+          "dependent": 7,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "punct",
+          "governor": 10,
+          "governorGloss": "situation",
+          "dependent": 8,
+          "dependentGloss": "\""
+        },
+        {
+          "dep": "amod",
+          "governor": 10,
+          "governorGloss": "situation",
+          "dependent": 9,
+          "dependentGloss": "grave"
+        },
+        {
+          "dep": "obj",
+          "governor": 6,
+          "governorGloss": "addressed",
+          "dependent": 10,
+          "dependentGloss": "situation"
+        },
+        {
+          "dep": "punct",
+          "governor": 10,
+          "governorGloss": "situation",
+          "dependent": 11,
+          "dependentGloss": "\""
+        },
+        {
+          "dep": "case",
+          "governor": 13,
+          "governorGloss": "Gaza",
+          "dependent": 12,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 10,
+          "governorGloss": "situation",
+          "dependent": 13,
+          "dependentGloss": "Gaza"
+        },
+        {
+          "dep": "cc",
+          "governor": 15,
+          "governorGloss": "increasing",
+          "dependent": 14,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "says",
+          "dependent": 15,
+          "dependentGloss": "increasing"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 6,
+          "governorGloss": "addressed",
+          "dependent": 15,
+          "dependentGloss": "increasing"
+        },
+        {
+          "dep": "amod",
+          "governor": 17,
+          "governorGloss": "aid",
+          "dependent": 16,
+          "dependentGloss": "humanitarian"
+        },
+        {
+          "dep": "obj",
+          "governor": 15,
+          "governorGloss": "increasing",
+          "dependent": 17,
+          "dependentGloss": "aid"
+        },
+        {
+          "dep": "case",
+          "governor": 20,
+          "governorGloss": "territory",
+          "dependent": 18,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "det",
+          "governor": 20,
+          "governorGloss": "territory",
+          "dependent": 19,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "obl:to",
+          "governor": 15,
+          "governorGloss": "increasing",
+          "dependent": 20,
+          "dependentGloss": "territory"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "says",
+          "dependent": 21,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 87,
+          "docTokenEnd": 88,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "Fidan",
+          "characterOffsetBegin": 354,
+          "characterOffsetEnd": 359,
+          "ner": "PERSON",
+          "nerConfidences": {
+            "PERSON": 0.97555230468113
+          }
+        },
+        {
+          "docTokenBegin": 91,
+          "docTokenEnd": 92,
+          "tokenBegin": 4,
+          "tokenEnd": 5,
+          "text": "Shoukry",
+          "characterOffsetBegin": 372,
+          "characterOffsetEnd": 379,
+          "ner": "PERSON",
+          "nerConfidences": {
+            "PERSON": 0.99232027089435
+          }
+        },
+        {
+          "docTokenBegin": 99,
+          "docTokenEnd": 100,
+          "tokenBegin": 12,
+          "tokenEnd": 13,
+          "text": "Gaza",
+          "characterOffsetBegin": 415,
+          "characterOffsetEnd": 419,
+          "ner": "LOCATION",
+          "nerConfidences": {
+            "LOCATION": 0.99978188023026
+          }
+        },
+        {
+          "docTokenBegin": 89,
+          "docTokenEnd": 90,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "he",
+          "characterOffsetBegin": 365,
+          "characterOffsetEnd": 367,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "Fidan",
+          "originalText": "Fidan",
+          "lemma": "Fidan",
+          "characterOffsetBegin": 354,
+          "characterOffsetEnd": 359,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "says",
+          "originalText": "says",
+          "lemma": "say",
+          "characterOffsetBegin": 360,
+          "characterOffsetEnd": 364,
+          "pos": "VBZ",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "he",
+          "originalText": "he",
+          "lemma": "he",
+          "characterOffsetBegin": 365,
+          "characterOffsetEnd": 367,
+          "pos": "PRP",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "and",
+          "originalText": "and",
+          "lemma": "and",
+          "characterOffsetBegin": 368,
+          "characterOffsetEnd": 371,
+          "pos": "CC",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "Shoukry",
+          "originalText": "Shoukry",
+          "lemma": "Shoukry",
+          "characterOffsetBegin": 372,
+          "characterOffsetEnd": 379,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "addressed",
+          "originalText": "addressed",
+          "lemma": "address",
+          "characterOffsetBegin": 380,
+          "characterOffsetEnd": 389,
+          "pos": "VBD",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 390,
+          "characterOffsetEnd": 393,
+          "pos": "DT",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "\"",
+          "originalText": "\"",
+          "lemma": "\"",
+          "characterOffsetBegin": 394,
+          "characterOffsetEnd": 395,
+          "pos": "``",
+          "ner": "O",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 9,
+          "word": "grave",
+          "originalText": "grave",
+          "lemma": "grave",
+          "characterOffsetBegin": 395,
+          "characterOffsetEnd": 400,
+          "pos": "JJ",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 10,
+          "word": "situation",
+          "originalText": "situation",
+          "lemma": "situation",
+          "characterOffsetBegin": 401,
+          "characterOffsetEnd": 410,
+          "pos": "NN",
+          "ner": "O",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 11,
+          "word": "\"",
+          "originalText": "\"",
+          "lemma": "\"",
+          "characterOffsetBegin": 410,
+          "characterOffsetEnd": 411,
+          "pos": "''",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 12,
+          "word": "in",
+          "originalText": "in",
+          "lemma": "in",
+          "characterOffsetBegin": 412,
+          "characterOffsetEnd": 414,
+          "pos": "IN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 13,
+          "word": "Gaza",
+          "originalText": "Gaza",
+          "lemma": "Gaza",
+          "characterOffsetBegin": 415,
+          "characterOffsetEnd": 419,
+          "pos": "NNP",
+          "ner": "LOCATION",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 14,
+          "word": "and",
+          "originalText": "and",
+          "lemma": "and",
+          "characterOffsetBegin": 420,
+          "characterOffsetEnd": 423,
+          "pos": "CC",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 15,
+          "word": "increasing",
+          "originalText": "increasing",
+          "lemma": "increase",
+          "characterOffsetBegin": 424,
+          "characterOffsetEnd": 434,
+          "pos": "VBG",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 16,
+          "word": "humanitarian",
+          "originalText": "humanitarian",
+          "lemma": "humanitarian",
+          "characterOffsetBegin": 435,
+          "characterOffsetEnd": 447,
+          "pos": "JJ",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 17,
+          "word": "aid",
+          "originalText": "aid",
+          "lemma": "aid",
+          "characterOffsetBegin": 448,
+          "characterOffsetEnd": 451,
+          "pos": "NN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 18,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 452,
+          "characterOffsetEnd": 454,
+          "pos": "IN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 19,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 455,
+          "characterOffsetEnd": 458,
+          "pos": "DT",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 20,
+          "word": "territory",
+          "originalText": "territory",
+          "lemma": "territory",
+          "characterOffsetBegin": 459,
+          "characterOffsetEnd": 468,
+          "pos": "NN",
+          "ner": "O",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 21,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 468,
+          "characterOffsetEnd": 469,
+          "pos": ".",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 35,
+          "dependentGloss": "tells"
+        },
+        {
+          "dep": "punct",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 1,
+          "dependentGloss": "\""
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "discussed",
+          "dependent": 2,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "aux",
+          "governor": 4,
+          "governorGloss": "discussed",
+          "dependent": 3,
+          "dependentGloss": "have"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 4,
+          "dependentGloss": "discussed"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "more",
+          "dependent": 5,
+          "dependentGloss": "what"
+        },
+        {
+          "dep": "obj",
+          "governor": 9,
+          "governorGloss": "do",
+          "dependent": 6,
+          "dependentGloss": "more"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "do",
+          "dependent": 7,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "aux",
+          "governor": 9,
+          "governorGloss": "do",
+          "dependent": 8,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 4,
+          "governorGloss": "discussed",
+          "dependent": 9,
+          "dependentGloss": "do"
+        },
+        {
+          "dep": "mark",
+          "governor": 11,
+          "governorGloss": "deliver",
+          "dependent": 10,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 9,
+          "governorGloss": "do",
+          "dependent": 11,
+          "dependentGloss": "deliver"
+        },
+        {
+          "dep": "amod",
+          "governor": 13,
+          "governorGloss": "aid",
+          "dependent": 12,
+          "dependentGloss": "humanitarian"
+        },
+        {
+          "dep": "obj",
+          "governor": 11,
+          "governorGloss": "deliver",
+          "dependent": 13,
+          "dependentGloss": "aid"
+        },
+        {
+          "dep": "case",
+          "governor": 15,
+          "governorGloss": "Gaza",
+          "dependent": 14,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "obl",
+          "governor": 11,
+          "governorGloss": "deliver",
+          "dependent": 15,
+          "dependentGloss": "Gaza"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "discussed",
+          "dependent": 16,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 17,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nsubj:pass",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 18,
+          "dependentGloss": "what"
+        },
+        {
+          "dep": "aux",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 19,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "aux:pass",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 20,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "conj",
+          "governor": 4,
+          "governorGloss": "discussed",
+          "dependent": 21,
+          "dependentGloss": "done"
+        },
+        {
+          "dep": "case",
+          "governor": 25,
+          "governorGloss": "run",
+          "dependent": 22,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "det",
+          "governor": 25,
+          "governorGloss": "run",
+          "dependent": 23,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 25,
+          "governorGloss": "run",
+          "dependent": 24,
+          "dependentGloss": "long"
+        },
+        {
+          "dep": "obl",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 25,
+          "dependentGloss": "run"
+        },
+        {
+          "dep": "case",
+          "governor": 31,
+          "governorGloss": "solution",
+          "dependent": 26,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "det",
+          "governor": 31,
+          "governorGloss": "solution",
+          "dependent": 27,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "nummod",
+          "governor": 30,
+          "governorGloss": "state",
+          "dependent": 28,
+          "dependentGloss": "two"
+        },
+        {
+          "dep": "punct",
+          "governor": 30,
+          "governorGloss": "state",
+          "dependent": 29,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "solution",
+          "dependent": 30,
+          "dependentGloss": "state"
+        },
+        {
+          "dep": "obl",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 31,
+          "dependentGloss": "solution"
+        },
+        {
+          "dep": "punct",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 32,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "punct",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 33,
+          "dependentGloss": "\""
+        },
+        {
+          "dep": "nsubj",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 34,
+          "dependentGloss": "Fidan"
+        },
+        {
+          "dep": "obj",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 36,
+          "dependentGloss": "reporters"
+        },
+        {
+          "dep": "punct",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 37,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 35,
+          "dependentGloss": "tells"
+        },
+        {
+          "dep": "punct",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 1,
+          "dependentGloss": "\""
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "discussed",
+          "dependent": 2,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "aux",
+          "governor": 4,
+          "governorGloss": "discussed",
+          "dependent": 3,
+          "dependentGloss": "have"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 4,
+          "dependentGloss": "discussed"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "more",
+          "dependent": 5,
+          "dependentGloss": "what"
+        },
+        {
+          "dep": "obj",
+          "governor": 9,
+          "governorGloss": "do",
+          "dependent": 6,
+          "dependentGloss": "more"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "do",
+          "dependent": 7,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "aux",
+          "governor": 9,
+          "governorGloss": "do",
+          "dependent": 8,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 4,
+          "governorGloss": "discussed",
+          "dependent": 9,
+          "dependentGloss": "do"
+        },
+        {
+          "dep": "mark",
+          "governor": 11,
+          "governorGloss": "deliver",
+          "dependent": 10,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 9,
+          "governorGloss": "do",
+          "dependent": 11,
+          "dependentGloss": "deliver"
+        },
+        {
+          "dep": "amod",
+          "governor": 13,
+          "governorGloss": "aid",
+          "dependent": 12,
+          "dependentGloss": "humanitarian"
+        },
+        {
+          "dep": "obj",
+          "governor": 11,
+          "governorGloss": "deliver",
+          "dependent": 13,
+          "dependentGloss": "aid"
+        },
+        {
+          "dep": "case",
+          "governor": 15,
+          "governorGloss": "Gaza",
+          "dependent": 14,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "obl:to",
+          "governor": 11,
+          "governorGloss": "deliver",
+          "dependent": 15,
+          "dependentGloss": "Gaza"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "discussed",
+          "dependent": 16,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 17,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nsubj:pass",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 18,
+          "dependentGloss": "what"
+        },
+        {
+          "dep": "aux",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 19,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "aux:pass",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 20,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 4,
+          "governorGloss": "discussed",
+          "dependent": 21,
+          "dependentGloss": "done"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 21,
+          "dependentGloss": "done"
+        },
+        {
+          "dep": "case",
+          "governor": 25,
+          "governorGloss": "run",
+          "dependent": 22,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "det",
+          "governor": 25,
+          "governorGloss": "run",
+          "dependent": 23,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 25,
+          "governorGloss": "run",
+          "dependent": 24,
+          "dependentGloss": "long"
+        },
+        {
+          "dep": "obl:in",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 25,
+          "dependentGloss": "run"
+        },
+        {
+          "dep": "case",
+          "governor": 31,
+          "governorGloss": "solution",
+          "dependent": 26,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "det",
+          "governor": 31,
+          "governorGloss": "solution",
+          "dependent": 27,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "nummod",
+          "governor": 30,
+          "governorGloss": "state",
+          "dependent": 28,
+          "dependentGloss": "two"
+        },
+        {
+          "dep": "punct",
+          "governor": 30,
+          "governorGloss": "state",
+          "dependent": 29,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "solution",
+          "dependent": 30,
+          "dependentGloss": "state"
+        },
+        {
+          "dep": "obl:for",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 31,
+          "dependentGloss": "solution"
+        },
+        {
+          "dep": "punct",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 32,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "punct",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 33,
+          "dependentGloss": "\""
+        },
+        {
+          "dep": "nsubj",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 34,
+          "dependentGloss": "Fidan"
+        },
+        {
+          "dep": "obj",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 36,
+          "dependentGloss": "reporters"
+        },
+        {
+          "dep": "punct",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 37,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 35,
+          "dependentGloss": "tells"
+        },
+        {
+          "dep": "punct",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 1,
+          "dependentGloss": "\""
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "discussed",
+          "dependent": 2,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "aux",
+          "governor": 4,
+          "governorGloss": "discussed",
+          "dependent": 3,
+          "dependentGloss": "have"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 4,
+          "dependentGloss": "discussed"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "more",
+          "dependent": 5,
+          "dependentGloss": "what"
+        },
+        {
+          "dep": "obj",
+          "governor": 9,
+          "governorGloss": "do",
+          "dependent": 6,
+          "dependentGloss": "more"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "do",
+          "dependent": 7,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "aux",
+          "governor": 9,
+          "governorGloss": "do",
+          "dependent": 8,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 4,
+          "governorGloss": "discussed",
+          "dependent": 9,
+          "dependentGloss": "do"
+        },
+        {
+          "dep": "mark",
+          "governor": 11,
+          "governorGloss": "deliver",
+          "dependent": 10,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 9,
+          "governorGloss": "do",
+          "dependent": 11,
+          "dependentGloss": "deliver"
+        },
+        {
+          "dep": "amod",
+          "governor": 13,
+          "governorGloss": "aid",
+          "dependent": 12,
+          "dependentGloss": "humanitarian"
+        },
+        {
+          "dep": "obj",
+          "governor": 11,
+          "governorGloss": "deliver",
+          "dependent": 13,
+          "dependentGloss": "aid"
+        },
+        {
+          "dep": "case",
+          "governor": 15,
+          "governorGloss": "Gaza",
+          "dependent": 14,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "obl:to",
+          "governor": 11,
+          "governorGloss": "deliver",
+          "dependent": 15,
+          "dependentGloss": "Gaza"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "discussed",
+          "dependent": 16,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 17,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nsubj:pass",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 18,
+          "dependentGloss": "what"
+        },
+        {
+          "dep": "aux",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 19,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "aux:pass",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 20,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 4,
+          "governorGloss": "discussed",
+          "dependent": 21,
+          "dependentGloss": "done"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 21,
+          "dependentGloss": "done"
+        },
+        {
+          "dep": "case",
+          "governor": 25,
+          "governorGloss": "run",
+          "dependent": 22,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "det",
+          "governor": 25,
+          "governorGloss": "run",
+          "dependent": 23,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "amod",
+          "governor": 25,
+          "governorGloss": "run",
+          "dependent": 24,
+          "dependentGloss": "long"
+        },
+        {
+          "dep": "obl:in",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 25,
+          "dependentGloss": "run"
+        },
+        {
+          "dep": "case",
+          "governor": 31,
+          "governorGloss": "solution",
+          "dependent": 26,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "det",
+          "governor": 31,
+          "governorGloss": "solution",
+          "dependent": 27,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "nummod",
+          "governor": 30,
+          "governorGloss": "state",
+          "dependent": 28,
+          "dependentGloss": "two"
+        },
+        {
+          "dep": "punct",
+          "governor": 30,
+          "governorGloss": "state",
+          "dependent": 29,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "compound",
+          "governor": 31,
+          "governorGloss": "solution",
+          "dependent": 30,
+          "dependentGloss": "state"
+        },
+        {
+          "dep": "obl:for",
+          "governor": 21,
+          "governorGloss": "done",
+          "dependent": 31,
+          "dependentGloss": "solution"
+        },
+        {
+          "dep": "punct",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 32,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "punct",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 33,
+          "dependentGloss": "\""
+        },
+        {
+          "dep": "nsubj",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 34,
+          "dependentGloss": "Fidan"
+        },
+        {
+          "dep": "obj",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 36,
+          "dependentGloss": "reporters"
+        },
+        {
+          "dep": "punct",
+          "governor": 35,
+          "governorGloss": "tells",
+          "dependent": 37,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 122,
+          "docTokenEnd": 123,
+          "tokenBegin": 14,
+          "tokenEnd": 15,
+          "text": "Gaza",
+          "characterOffsetBegin": 540,
+          "characterOffsetEnd": 544,
+          "ner": "LOCATION",
+          "nerConfidences": {
+            "LOCATION": 0.99921656474274
+          }
+        },
+        {
+          "docTokenBegin": 135,
+          "docTokenEnd": 138,
+          "tokenBegin": 27,
+          "tokenEnd": 30,
+          "text": "two-state",
+          "characterOffsetBegin": 589,
+          "characterOffsetEnd": 598,
+          "ner": "NUMBER",
+          "normalizedNER": "2.0",
+          "nerConfidences": {
+            "NUMBER": -1
+          }
+        },
+        {
+          "docTokenBegin": 141,
+          "docTokenEnd": 142,
+          "tokenBegin": 33,
+          "tokenEnd": 34,
+          "text": "Fidan",
+          "characterOffsetBegin": 610,
+          "characterOffsetEnd": 615,
+          "ner": "PERSON",
+          "nerConfidences": {
+            "PERSON": 0.98576859588343
+          }
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "\"",
+          "originalText": "\"",
+          "lemma": "\"",
+          "characterOffsetBegin": 470,
+          "characterOffsetEnd": 471,
+          "pos": "``",
+          "ner": "O",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 2,
+          "word": "We",
+          "originalText": "We",
+          "lemma": "we",
+          "characterOffsetBegin": 471,
+          "characterOffsetEnd": 473,
+          "pos": "PRP",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "have",
+          "originalText": "have",
+          "lemma": "have",
+          "characterOffsetBegin": 474,
+          "characterOffsetEnd": 478,
+          "pos": "VBP",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "discussed",
+          "originalText": "discussed",
+          "lemma": "discuss",
+          "characterOffsetBegin": 479,
+          "characterOffsetEnd": 488,
+          "pos": "VBN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "what",
+          "originalText": "what",
+          "lemma": "what",
+          "characterOffsetBegin": 489,
+          "characterOffsetEnd": 493,
+          "pos": "WP",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "more",
+          "originalText": "more",
+          "lemma": "more",
+          "characterOffsetBegin": 494,
+          "characterOffsetEnd": 498,
+          "pos": "JJR",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "we",
+          "originalText": "we",
+          "lemma": "we",
+          "characterOffsetBegin": 499,
+          "characterOffsetEnd": 501,
+          "pos": "PRP",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "can",
+          "originalText": "can",
+          "lemma": "can",
+          "characterOffsetBegin": 502,
+          "characterOffsetEnd": 505,
+          "pos": "MD",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "do",
+          "originalText": "do",
+          "lemma": "do",
+          "characterOffsetBegin": 506,
+          "characterOffsetEnd": 508,
+          "pos": "VB",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 10,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 509,
+          "characterOffsetEnd": 511,
+          "pos": "TO",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 11,
+          "word": "deliver",
+          "originalText": "deliver",
+          "lemma": "deliver",
+          "characterOffsetBegin": 512,
+          "characterOffsetEnd": 519,
+          "pos": "VB",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 12,
+          "word": "humanitarian",
+          "originalText": "humanitarian",
+          "lemma": "humanitarian",
+          "characterOffsetBegin": 520,
+          "characterOffsetEnd": 532,
+          "pos": "JJ",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 13,
+          "word": "aid",
+          "originalText": "aid",
+          "lemma": "aid",
+          "characterOffsetBegin": 533,
+          "characterOffsetEnd": 536,
+          "pos": "NN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 14,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 537,
+          "characterOffsetEnd": 539,
+          "pos": "IN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 15,
+          "word": "Gaza",
+          "originalText": "Gaza",
+          "lemma": "Gaza",
+          "characterOffsetBegin": 540,
+          "characterOffsetEnd": 544,
+          "pos": "NNP",
+          "ner": "LOCATION",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 16,
+          "word": ",",
+          "originalText": ",",
+          "lemma": ",",
+          "characterOffsetBegin": 544,
+          "characterOffsetEnd": 545,
+          "pos": ",",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 17,
+          "word": "and",
+          "originalText": "and",
+          "lemma": "and",
+          "characterOffsetBegin": 546,
+          "characterOffsetEnd": 549,
+          "pos": "CC",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 18,
+          "word": "what",
+          "originalText": "what",
+          "lemma": "what",
+          "characterOffsetBegin": 550,
+          "characterOffsetEnd": 554,
+          "pos": "WP",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 19,
+          "word": "can",
+          "originalText": "can",
+          "lemma": "can",
+          "characterOffsetBegin": 555,
+          "characterOffsetEnd": 558,
+          "pos": "MD",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 20,
+          "word": "be",
+          "originalText": "be",
+          "lemma": "be",
+          "characterOffsetBegin": 559,
+          "characterOffsetEnd": 561,
+          "pos": "VB",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 21,
+          "word": "done",
+          "originalText": "done",
+          "lemma": "do",
+          "characterOffsetBegin": 562,
+          "characterOffsetEnd": 566,
+          "pos": "VBN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 22,
+          "word": "in",
+          "originalText": "in",
+          "lemma": "in",
+          "characterOffsetBegin": 567,
+          "characterOffsetEnd": 569,
+          "pos": "IN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 23,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 570,
+          "characterOffsetEnd": 573,
+          "pos": "DT",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 24,
+          "word": "long",
+          "originalText": "long",
+          "lemma": "long",
+          "characterOffsetBegin": 574,
+          "characterOffsetEnd": 578,
+          "pos": "JJ",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 25,
+          "word": "run",
+          "originalText": "run",
+          "lemma": "run",
+          "characterOffsetBegin": 579,
+          "characterOffsetEnd": 582,
+          "pos": "NN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 26,
+          "word": "for",
+          "originalText": "for",
+          "lemma": "for",
+          "characterOffsetBegin": 583,
+          "characterOffsetEnd": 586,
+          "pos": "IN",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 27,
+          "word": "a",
+          "originalText": "a",
+          "lemma": "a",
+          "characterOffsetBegin": 587,
+          "characterOffsetEnd": 588,
+          "pos": "DT",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 28,
+          "word": "two",
+          "originalText": "two",
+          "lemma": "two",
+          "characterOffsetBegin": 589,
+          "characterOffsetEnd": 592,
+          "pos": "CD",
+          "ner": "NUMBER",
+          "normalizedNER": "2.0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 29,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 592,
+          "characterOffsetEnd": 593,
+          "pos": "HYPH",
+          "ner": "NUMBER",
+          "normalizedNER": "2.0",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 30,
+          "word": "state",
+          "originalText": "state",
+          "lemma": "state",
+          "characterOffsetBegin": 593,
+          "characterOffsetEnd": 598,
+          "pos": "NN",
+          "ner": "NUMBER",
+          "normalizedNER": "2.0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 31,
+          "word": "solution",
+          "originalText": "solution",
+          "lemma": "solution",
+          "characterOffsetBegin": 599,
+          "characterOffsetEnd": 607,
+          "pos": "NN",
+          "ner": "O",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 32,
+          "word": ",",
+          "originalText": ",",
+          "lemma": ",",
+          "characterOffsetBegin": 607,
+          "characterOffsetEnd": 608,
+          "pos": ",",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 33,
+          "word": "\"",
+          "originalText": "\"",
+          "lemma": "\"",
+          "characterOffsetBegin": 608,
+          "characterOffsetEnd": 609,
+          "pos": "''",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 34,
+          "word": "Fidan",
+          "originalText": "Fidan",
+          "lemma": "Fidan",
+          "characterOffsetBegin": 610,
+          "characterOffsetEnd": 615,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 35,
+          "word": "tells",
+          "originalText": "tells",
+          "lemma": "tell",
+          "characterOffsetBegin": 616,
+          "characterOffsetEnd": 621,
+          "pos": "VBZ",
+          "ner": "O",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 36,
+          "word": "reporters",
+          "originalText": "reporters",
+          "lemma": "reporter",
+          "characterOffsetBegin": 622,
+          "characterOffsetEnd": 631,
+          "pos": "NNS",
+          "ner": "O",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 37,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 631,
+          "characterOffsetEnd": 632,
+          "pos": ".",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "E-X-T-E-N-D"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "E-X-T-E-N-D",
+          "dependent": 1,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "E-X-T-E-N-D",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "E-X-T-E-N-D",
+          "dependent": 4,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "E-X-T-E-N-D"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "E-X-T-E-N-D",
+          "dependent": 1,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "E-X-T-E-N-D",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "E-X-T-E-N-D",
+          "dependent": 4,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "E-X-T-E-N-D"
+        },
+        {
+          "dep": "compound",
+          "governor": 3,
+          "governorGloss": "E-X-T-E-N-D",
+          "dependent": 1,
+          "dependentGloss": "T"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "E-X-T-E-N-D",
+          "dependent": 2,
+          "dependentGloss": "-"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "E-X-T-E-N-D",
+          "dependent": 4,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "T",
+          "originalText": "T",
+          "lemma": "t",
+          "characterOffsetBegin": 633,
+          "characterOffsetEnd": 634,
+          "pos": "NN",
+          "ner": "O",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 2,
+          "word": "-",
+          "originalText": "-",
+          "lemma": "-",
+          "characterOffsetBegin": 634,
+          "characterOffsetEnd": 635,
+          "pos": "HYPH",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 3,
+          "word": "E-X-T-E-N-D",
+          "originalText": "E-X-T-E-N-D",
+          "lemma": "e-x-t-e-n-d",
+          "characterOffsetBegin": 635,
+          "characterOffsetEnd": 646,
+          "pos": "NN",
+          "ner": "O",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 4,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 646,
+          "characterOffsetEnd": 647,
+          "pos": ".",
+          "ner": "O",
+          "before": "",
+          "after": " "
+        }
+      ]
+    }
+  ]
+}
